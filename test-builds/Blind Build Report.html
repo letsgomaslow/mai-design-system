@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Blind Build Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font:400 15px/24px "Manrope",sans-serif;color:#333;background:#F6F7F9;-webkit-font-smoothing:antialiased}
+a{color:#DA85B2;text-decoration:none}a:hover{color:#EE7BB3}
+.wrap{max-width:1200px;margin:0 auto;padding:48px 32px 96px}
+.eyebrow{font:500 11px "IBM Plex Mono",monospace;letter-spacing:3px;text-transform:uppercase;color:#654C8F}
+h1{font:600 38px/42px "Manrope",sans-serif;letter-spacing:-.89px;color:#192332;margin:12px 0 8px}
+.sub{color:#666;max-width:760px;margin:0 0 40px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #F1F1F1;border-radius:4px}
+th{font:600 10px "Manrope",sans-serif;letter-spacing:1px;text-transform:uppercase;color:#192332;text-align:left;padding:14px 16px;border-bottom:2px solid #192332}
+td{font:400 13px/20px "Manrope",sans-serif;color:#666;padding:12px 16px;border-bottom:1px solid #E1E1E1;vertical-align:top}
+td.mono{font:400 11px/17px "IBM Plex Mono",monospace;color:#333}
+.score{font:600 24px/26px "Manrope",sans-serif;letter-spacing:-.57px;color:#192332}
+.verdict{font:600 11px "Manrope",sans-serif;letter-spacing:2px;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px}
+.dot{width:6px;height:6px;border-radius:9999px;display:inline-block}
+.overall{background:#fff;border:1px solid #F1F1F1;border-radius:4px;padding:32px;margin-top:24px;display:flex;gap:48px;align-items:baseline}
+.big{font:600 60px/62px "Manrope",sans-serif;letter-spacing:-1.4px;color:#192332}
+#status{font:400 12px "IBM Plex Mono",monospace;letter-spacing:1px;color:#A5A5A5;margin-bottom:16px}
+iframe{position:absolute;left:-99999px;width:900px;height:700px;border:0}
+</style></head><body>
+<div class="wrap">
+<div class="eyebrow">MASLOW AI · DESIGN.MD TESTING</div>
+<h1>Blind-build report</h1>
+<p class="sub">Six artifacts were built from the DESIGN.md text alone (no access to the design-system files — Google-Fonts fallback, text lockup). Each is scored by the Adherence Auditor. Threshold: 90.</p>
+<div id="status">RUNNING…</div>
+<table><thead><tr><th style="width:220px">Artifact</th><th style="width:90px">Score</th><th style="width:140px">Verdict</th><th style="width:110px">Checks</th><th>Violations</th></tr></thead><tbody id="rows"></tbody></table>
+<div class="overall"><span class="big" id="avg">–</span><span class="verdict" id="overallv"></span><span style="color:#A5A5A5;font-size:12px">mean adherence across artifacts</span></div>
+</div>
+<iframe id="aud" src="../testing/Adherence Auditor.html"></iframe>
+<script>
+const BUILDS=['hero-nav','pricing','settings-dashboard','deck-slide','doc-memo','social-card'];
+const rows=document.getElementById('rows');
+window.__report=null;
+async function run(){
+  const aud=document.getElementById('aud');
+  await new Promise(r=>aud.addEventListener('load',r,{once:true}));
+  await new Promise(r=>setTimeout(r,800));
+  const out=[];
+  for(const b of BUILDS){
+    document.getElementById('status').textContent='AUDITING · '+b.toUpperCase();
+    try{
+      const html=await fetch('../test-builds/'+b+'.html').then(r=>r.text());
+      const r=await aud.contentWindow.__runAudit(html);
+      out.push({name:b,score:r.score,checked:r.checked,viols:r.viols});
+      const pass=r.score>=90;
+      const top={};for(const v of r.viols){top[v.cat]=(top[v.cat]||0)+1}
+      const sum=Object.entries(top).map(([k,n])=>k+' ×'+n).join(', ')||'—';
+      const detail=r.viols.slice(0,4).map(v=>v.el.split(' > ').pop()+': '+v.val).join('<br>');
+      rows.insertAdjacentHTML('beforeend','<tr><td class="mono">'+b+'.html</td><td><span class="score">'+r.score+'</span></td><td><span class="verdict" style="color:'+(pass?'#192332':'#D52C2C')+'"><span class="dot" style="background:'+(pass?'#2CD552':'#D52C2C')+'"></span>'+(pass?'PASS':'FAIL')+'</span></td><td class="mono">'+r.checked+' els</td><td>'+sum+(detail?'<div class="mono" style="margin-top:6px;color:#A5A5A5">'+detail+'</div>':'')+'</td></tr>');
+    }catch(e){
+      out.push({name:b,score:0,error:e.message,viols:[]});
+      rows.insertAdjacentHTML('beforeend','<tr><td class="mono">'+b+'.html</td><td colspan="4" style="color:#D52C2C">error: '+e.message+'</td></tr>');
+    }
+  }
+  const avg=Math.round(out.reduce((a,x)=>a+x.score,0)/out.length);
+  document.getElementById('avg').textContent=avg;
+  const pass=avg>=90;
+  document.getElementById('overallv').innerHTML='<span class="dot" style="background:'+(pass?'#2CD552':'#D52C2C')+'"></span>'+(pass?'SYSTEM PASS':'NEEDS WORK');
+  document.getElementById('overallv').style.color=pass?'#192332':'#D52C2C';
+  document.getElementById('status').textContent='DONE · '+new Date().toISOString().slice(0,10);
+  window.__report=out;
+}
+run();
+</script></body></html>

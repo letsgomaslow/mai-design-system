@@ -1,0 +1,14 @@
+/* Maslow AI spacing, radius, shadow, layout tokens */
+:root {
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px; --space-12: 48px; --space-24: 96px;
+  --radius-sm: 2px; --radius-md: 4px; --radius-lg: 8px;
+  --radius-pill: 17px; --radius-2xl: 34px; --radius-full: 9999px;
+  --shadow-card: 17px 9px 5px rgba(0,0,0,0.25);        /* stacked-paper, offset right+down */
+  --shadow-card-featured: 17px 11px 5px rgba(0,0,0,0.75);
+  --shadow-headshot: 0 4px 6px rgba(0,0,0,0.124);
+  --shadow-matte: 2px 0 10px rgba(0,0,0,0.1);
+  --layout-max: 1400px; --layout-content: 1200px; --layout-inner: 1002px;
+  --section-gap: 96px; --card-gutter: 16px;
+  --ease-brand: cubic-bezier(.2,.7,.2,1); /* @kind other */ --dur-reveal: .7s; /* @kind other */
+}

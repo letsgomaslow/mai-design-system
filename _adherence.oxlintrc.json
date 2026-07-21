@@ -1,0 +1,352 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/actions/**",
+              "components/badges/**",
+              "components/cards/**",
+              "components/forms/**",
+              "components/navigation/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Manrope|DM Sans|IBM Plex Mono))/i]",
+        "message": "Font not provided by the design system. Available: Manrope, DM Sans, IBM Plex Mono."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CaseStudyCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:tag|tagColor|title|blurb|cta|href|featured|key|ref|className|style|children)$/]",
+        "message": "<CaseStudyCard> doesn't accept that prop. Declared props: tag, tagColor, title, blurb, cta, href, featured."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CategoryTag'] > JSXAttribute > JSXIdentifier[name!=/^(?:pillar|children|key|ref|className|style|children)$/]",
+        "message": "<CategoryTag> doesn't accept that prop. Declared props: pillar, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CTAButton'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|href|variant|onClick|key|ref|className|style|children)$/]",
+        "message": "<CTAButton> doesn't accept that prop. Declared props: children, href, variant, onClick."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CTAButton'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:primary|dark|ghost)$/]",
+        "message": "<CTAButton> variant must be one of 'primary' | 'dark' | 'ghost'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CTALink'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|href|key|ref|className|style|children)$/]",
+        "message": "<CTALink> doesn't accept that prop. Declared props: children, href."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FormInput'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|id|type|placeholder|value|onChange|key|ref|className|style|children)$/]",
+        "message": "<FormInput> doesn't accept that prop. Declared props: label, id, type, placeholder, value, onChange."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FormTextArea'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|id|placeholder|rows|value|onChange|key|ref|className|style|children)$/]",
+        "message": "<FormTextArea> doesn't accept that prop. Declared props: label, id, placeholder, rows, value, onChange."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='NavHeader'] > JSXAttribute > JSXIdentifier[name!=/^(?:links|active|logoHref|key|ref|className|style|children)$/]",
+        "message": "<NavHeader> doesn't accept that prop. Declared props: links, active, logoHref."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PillBadge'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|color|key|ref|className|style|children)$/]",
+        "message": "<PillBadge> doesn't accept that prop. Declared props: children, color."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SectionEyebrow'] > JSXAttribute > JSXIdentifier[name!=/^(?:num|children|color|key|ref|className|style|children)$/]",
+        "message": "<SectionEyebrow> doesn't accept that prop. Declared props: num, children, color."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SiteFooter'] > JSXAttribute > JSXIdentifier[name!=/^(?:offices|note|key|ref|className|style|children)$/]",
+        "message": "<SiteFooter> doesn't accept that prop. Declared props: offices, note."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StatBlock'] > JSXAttribute > JSXIdentifier[name!=/^(?:stats|key|ref|className|style|children)$/]",
+        "message": "<StatBlock> doesn't accept that prop. Declared props: stats."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StatusBadge'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|open|key|ref|className|style|children)$/]",
+        "message": "<StatusBadge> doesn't accept that prop. Declared props: children, open."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='TestimonialBlock'] > JSXAttribute > JSXIdentifier[name!=/^(?:quote|attribution|headshotSrc|key|ref|className|style|children)$/]",
+        "message": "<TestimonialBlock> doesn't accept that prop. Declared props: quote, attribution, headshotSrc."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "CaseStudyCard": {
+        "replaces": []
+      },
+      "CategoryTag": {
+        "replaces": []
+      },
+      "CTAButton": {
+        "replaces": []
+      },
+      "CTALink": {
+        "replaces": []
+      },
+      "FormInput": {
+        "replaces": []
+      },
+      "FormTextArea": {
+        "replaces": []
+      },
+      "NavHeader": {
+        "replaces": []
+      },
+      "PillBadge": {
+        "replaces": []
+      },
+      "SectionEyebrow": {
+        "replaces": []
+      },
+      "SiteFooter": {
+        "replaces": []
+      },
+      "StatBlock": {
+        "replaces": []
+      },
+      "StatusBadge": {
+        "replaces": []
+      },
+      "TestimonialBlock": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--action-button",
+      "--action-link",
+      "--action-link-hover",
+      "--border-hairline",
+      "--border-structural",
+      "--card-gutter",
+      "--dur-reveal",
+      "--ease-brand",
+      "--focus-ring",
+      "--font-meta",
+      "--font-mono",
+      "--font-primary",
+      "--gradient-card-teal-pink",
+      "--gradient-logo",
+      "--layout-content",
+      "--layout-inner",
+      "--layout-max",
+      "--maslow-accent-orange",
+      "--maslow-accent-pink",
+      "--maslow-accent-purple",
+      "--maslow-accent-teal",
+      "--maslow-alt-teal",
+      "--maslow-band-navy",
+      "--maslow-black",
+      "--maslow-body-grey",
+      "--maslow-border-grey",
+      "--maslow-bright-yellow",
+      "--maslow-closed-red",
+      "--maslow-dark-border",
+      "--maslow-dark-navy",
+      "--maslow-dark-surface",
+      "--maslow-dark-surface-alt",
+      "--maslow-dark-text-secondary",
+      "--maslow-darkish-purple",
+      "--maslow-gradient-pink",
+      "--maslow-hot-pink",
+      "--maslow-label-purple",
+      "--maslow-light-grey",
+      "--maslow-meta-grey",
+      "--maslow-nav-border",
+      "--maslow-near-black",
+      "--maslow-off-white",
+      "--maslow-open-green",
+      "--maslow-text-grey",
+      "--maslow-white",
+      "--pillar-design",
+      "--pillar-strategy",
+      "--pillar-technology",
+      "--radius-2xl",
+      "--radius-full",
+      "--radius-lg",
+      "--radius-md",
+      "--radius-pill",
+      "--radius-sm",
+      "--section-gap",
+      "--shadow-card",
+      "--shadow-card-featured",
+      "--shadow-headshot",
+      "--shadow-matte",
+      "--space-1",
+      "--space-12",
+      "--space-2",
+      "--space-24",
+      "--space-3",
+      "--space-4",
+      "--space-6",
+      "--space-8",
+      "--surface-alt",
+      "--surface-dark",
+      "--surface-page",
+      "--text-body",
+      "--text-heading",
+      "--text-meta",
+      "--text-secondary",
+      "--track-eyebrow",
+      "--track-l1",
+      "--track-l2",
+      "--track-l3",
+      "--track-l4",
+      "--track-l5",
+      "--track-l6",
+      "--track-l7",
+      "--track-l8",
+      "--track-l9",
+      "--type-eyebrow",
+      "--type-l1",
+      "--type-l2",
+      "--type-l3",
+      "--type-l4",
+      "--type-l5",
+      "--type-l6",
+      "--type-l7",
+      "--type-l8",
+      "--type-l9"
+    ],
+    "tokenKinds": {
+      "--maslow-dark-navy": "color",
+      "--maslow-band-navy": "color",
+      "--maslow-darkish-purple": "color",
+      "--maslow-accent-pink": "color",
+      "--maslow-hot-pink": "color",
+      "--maslow-accent-teal": "color",
+      "--maslow-alt-teal": "color",
+      "--maslow-accent-orange": "color",
+      "--maslow-accent-purple": "color",
+      "--maslow-label-purple": "color",
+      "--maslow-bright-yellow": "color",
+      "--maslow-gradient-pink": "color",
+      "--maslow-white": "color",
+      "--maslow-off-white": "color",
+      "--maslow-light-grey": "color",
+      "--maslow-border-grey": "color",
+      "--maslow-nav-border": "color",
+      "--maslow-body-grey": "color",
+      "--maslow-text-grey": "font",
+      "--maslow-meta-grey": "color",
+      "--maslow-near-black": "color",
+      "--maslow-black": "color",
+      "--maslow-open-green": "color",
+      "--maslow-closed-red": "color",
+      "--maslow-dark-surface": "color",
+      "--maslow-dark-surface-alt": "color",
+      "--maslow-dark-border": "color",
+      "--maslow-dark-text-secondary": "font",
+      "--text-body": "font",
+      "--text-secondary": "font",
+      "--text-meta": "font",
+      "--text-heading": "font",
+      "--surface-page": "color",
+      "--surface-alt": "color",
+      "--surface-dark": "color",
+      "--border-hairline": "color",
+      "--border-structural": "color",
+      "--action-link": "color",
+      "--action-link-hover": "color",
+      "--action-button": "color",
+      "--focus-ring": "color",
+      "--pillar-strategy": "color",
+      "--pillar-technology": "color",
+      "--pillar-design": "color",
+      "--gradient-logo": "color",
+      "--gradient-card-teal-pink": "color",
+      "--font-primary": "font",
+      "--font-meta": "font",
+      "--font-mono": "font",
+      "--type-l1": "font",
+      "--track-l1": "spacing",
+      "--type-l2": "font",
+      "--track-l2": "spacing",
+      "--type-l3": "font",
+      "--track-l3": "spacing",
+      "--type-l4": "font",
+      "--track-l4": "spacing",
+      "--type-l5": "font",
+      "--track-l5": "spacing",
+      "--type-l6": "font",
+      "--track-l6": "spacing",
+      "--type-l7": "font",
+      "--track-l7": "spacing",
+      "--type-l8": "font",
+      "--track-l8": "spacing",
+      "--type-l9": "font",
+      "--track-l9": "spacing",
+      "--type-eyebrow": "font",
+      "--track-eyebrow": "spacing",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-6": "spacing",
+      "--space-8": "spacing",
+      "--space-12": "spacing",
+      "--space-24": "spacing",
+      "--radius-sm": "radius",
+      "--radius-md": "radius",
+      "--radius-lg": "radius",
+      "--radius-pill": "radius",
+      "--radius-2xl": "radius",
+      "--radius-full": "radius",
+      "--shadow-card": "shadow",
+      "--shadow-card-featured": "shadow",
+      "--shadow-headshot": "shadow",
+      "--shadow-matte": "shadow",
+      "--layout-max": "spacing",
+      "--layout-content": "spacing",
+      "--layout-inner": "spacing",
+      "--section-gap": "spacing",
+      "--card-gutter": "spacing",
+      "--ease-brand": "other",
+      "--dur-reveal": "other"
+    },
+    "fontFamilies": [
+      "DM Sans",
+      "IBM Plex Mono",
+      "Manrope"
+    ]
+  }
+}
