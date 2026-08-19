@@ -1,0 +1,18 @@
+{
+  "scenario": "Blind build using only packaged Brand OS resources",
+  "outputs": [
+    "artifact-brief.json",
+    "manifest.json",
+    "maslow-social-banner-1584x396.png",
+    "maslow-social-banner-1584x396.svg",
+    "maslow-social-og-1200x630.png",
+    "maslow-social-og-1200x630.svg",
+    "maslow-social-square-1080x1080.png",
+    "maslow-social-square-1080x1080.svg",
+    "maslow-workflow-brief.pptx",
+    "maslow-workflow-proposal.docx",
+    "website-cta.html"
+  ],
+  "evidenceStatus": "illustrative",
+  "source": "Maslow Brand OS blind-build fixture"
+}

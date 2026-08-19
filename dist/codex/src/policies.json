@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "messaging": {
+    "primaryPosition": "AI employees for the work that waits on your busiest people.",
+    "supportingPosition": "Transform with purpose.",
+    "audience": "Executives and operators responsible for waiting workflows, human decisions, and measurable delivery.",
+    "voice": ["confident", "plain-spoken", "consultant-calm", "specific", "buyer-first"]
+  },
+  "copy": {
+    "locale": "en-US",
+    "forbidEmDash": true,
+    "hypeTerms": ["revolutionary", "game-changing", "guaranteed", "disruptive"],
+    "selfCertifyingTerms": ["honest", "real", "plainly", "by design"],
+    "maxContrastConstructions": 1,
+    "requireOutcomeFirst": true
+  },
+  "evidence": {
+    "statuses": ["production", "modeled", "illustrative", "in_preparation"],
+    "productionRequiresSource": true,
+    "modeledRequiresSource": true,
+    "diligenceDefault": "in_preparation",
+    "placeLabelBesideClaim": true
+  },
+  "interaction": {
+    "primaryActionsPerView": 1,
+    "pinkRole": "small interaction signal or exceptional emphasis",
+    "structuralRadius": "0px",
+    "circleExceptions": ["avatar", "status-dot", "step-marker", "small-signal"]
+  }
+}

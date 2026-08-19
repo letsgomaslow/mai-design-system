@@ -1,0 +1,544 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/kstlnx",
+    "id": "kstlnx",
+    "slide": 6,
+    "layoutId": "35bb68d9-aa83-47f0-bb9a-126252722c91",
+    "layoutName": "06 Closing",
+    "masterLayoutId": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+    "masterLayoutName": "Maslow Brand Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Maslow Brand OS 1.0.0",
+    "colors": {
+      "accent1": "#192332",
+      "accent2": "#73C1AE",
+      "accent3": "#654C8F",
+      "accent4": "#EBA93D",
+      "accent5": "#EE7BB3",
+      "accent6": "#FFF860",
+      "bg1": "#FFFFFF",
+      "bg2": "#F6F7F9",
+      "tx1": "#192332",
+      "tx2": "#666666",
+      "dk1": "#333333",
+      "dk2": "#121D35",
+      "lt1": "#FFFFFF",
+      "lt2": "#E1E1E1",
+      "hlink": "#9D4B8E",
+      "folHlink": "#654C8F"
+    }
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "35bb68d9-aa83-47f0-bb9a-126252722c91",
+      "name": "06 Closing",
+      "parentLayoutId": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/35bb68d9-aa83-47f0-bb9a-126252722c91/1",
+          "id": "1",
+          "name": "06 Closing background",
+          "bbox": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "geometry": "rect",
+          "fillColor": "#FFFFFF",
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/35bb68d9-aa83-47f0-bb9a-126252722c91/7d80a733-4cd8-455a-a4fd-50f3dd4c0c6c",
+          "id": "7d80a733-4cd8-455a-a4fd-50f3dd4c0c6c",
+          "name": "06 Closing title 0",
+          "bbox": [
+            92,
+            220,
+            1020,
+            170
+          ],
+          "text": "{{TITLE}}",
+          "textPreview": "{{TITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{TITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{TITLE}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/35bb68d9-aa83-47f0-bb9a-126252722c91/1e76e482-0761-4e20-9e5e-5ad9a90bb273",
+          "id": "1e76e482-0761-4e20-9e5e-5ad9a90bb273",
+          "name": "06 Closing subtitle 0",
+          "bbox": [
+            92,
+            430,
+            700,
+            74
+          ],
+          "text": "{{SUBTITLE}}",
+          "textPreview": "{{SUBTITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{SUBTITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{SUBTITLE}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+      "name": "Maslow Brand Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/f2lsfe90",
+      "id": "1",
+      "bbox": [
+        92,
+        58,
+        92,
+        62
+      ],
+      "geometry": "rect",
+      "alt": "Maslow AI mark in navy",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "rect"
+      },
+      "asset": {
+        "assetId": "e24224e6-7c66-4f34-ac6c-63bac45853ae",
+        "contentType": "image/png",
+        "byteLength": 25708
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xgzedsrm",
+      "id": "2",
+      "name": "logo-label-light",
+      "bbox": [
+        198,
+        74,
+        170,
+        26
+      ],
+      "geometry": "rect",
+      "text": "MASLOW AI",
+      "textPreview": "MASLOW AI",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "color": "#192332",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MASLOW AI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MASLOW AI",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#192332",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MASLOW AI",
+              "fontSize": 12,
+              "color": "#192332",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfqd47a1",
+      "id": "3",
+      "name": "closing-heading",
+      "bbox": [
+        92,
+        224,
+        1050,
+        150
+      ],
+      "geometry": "rect",
+      "text": "{{NEXT_ACTION_HEADLINE}}",
+      "textPreview": "{{NEXT_ACTION_HEADLINE}}",
+      "resolvedFontSize": 52,
+      "resolvedTextStyle": {
+        "fontSize": 52,
+        "color": "#192332",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{NEXT_ACTION_HEADLINE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{NEXT_ACTION_HEADLINE}}",
+          "resolvedTextStyle": {
+            "fontSize": 52,
+            "color": "#192332",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{NEXT_ACTION_HEADLINE}}",
+              "fontSize": 52,
+              "color": "#192332",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jihwf29s",
+      "id": "4",
+      "name": "closing-action",
+      "bbox": [
+        92,
+        424,
+        420,
+        72
+      ],
+      "geometry": "rect",
+      "fillColor": "#192332",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ih8f6xs7",
+      "id": "5",
+      "name": "closing-action-label",
+      "bbox": [
+        120,
+        446,
+        350,
+        28
+      ],
+      "geometry": "rect",
+      "text": "{{CTA_LABEL}}",
+      "textPreview": "{{CTA_LABEL}}",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "color": "#FFFFFF",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{CTA_LABEL}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{CTA_LABEL}}",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{CTA_LABEL}}",
+              "fontSize": 16,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5kjehcri",
+      "id": "6",
+      "name": "closing-action-signal",
+      "bbox": [
+        92,
+        492,
+        48,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#EE7BB3",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjqx87ad",
+      "id": "7",
+      "name": "closing-contact",
+      "bbox": [
+        92,
+        536,
+        700,
+        34
+      ],
+      "geometry": "rect",
+      "text": "{{CONTACT}}",
+      "textPreview": "{{CONTACT}}",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "color": "#666666",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{CONTACT}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{CONTACT}}",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#666666"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{CONTACT}}",
+              "fontSize": 13,
+              "color": "#666666"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zmxw3it8",
+      "id": "8",
+      "name": "footer-wordmark-{{FOLIO}}",
+      "bbox": [
+        92,
+        668,
+        180,
+        24
+      ],
+      "geometry": "rect",
+      "text": "MASLOW AI",
+      "textPreview": "MASLOW AI",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "color": "#A5A5A5",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MASLOW AI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MASLOW AI",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#A5A5A5",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MASLOW AI",
+              "fontSize": 12,
+              "color": "#A5A5A5",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/elovuds3",
+      "id": "9",
+      "name": "footer-folio-{{FOLIO}}",
+      "bbox": [
+        1008,
+        668,
+        180,
+        24
+      ],
+      "geometry": "rect",
+      "text": "MASLOW AI · {{FOLIO}}",
+      "textPreview": "MASLOW AI · {{FOLIO}}",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "color": "#A5A5A5",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MASLOW AI · {{FOLIO}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MASLOW AI · {{FOLIO}}",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#A5A5A5",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MASLOW AI · {{FOLIO}}",
+              "fontSize": 11,
+              "color": "#A5A5A5",
+              "alignment": "right"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

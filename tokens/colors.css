@@ -1,11 +1,11 @@
-/* Maslow AI color tokens — Ascent 2026 */
+/* Generated-compatible aliases for Maslow Brand OS 1.0.0. Canonical source: src/tokens.json */
 :root {
   /* Brand */
   --maslow-dark-navy: #192332;
   --maslow-band-navy: #121D35;
   --maslow-darkish-purple: #401877;
-  --maslow-accent-pink: #DA85B2;
   --maslow-hot-pink: #EE7BB3;
+  --maslow-accent-pink: var(--maslow-hot-pink); /* legacy name; signal only */
   --maslow-accent-teal: #73C1AE;
   --maslow-alt-teal: #6DC4AD;
   --maslow-accent-orange: #EBA93D;
@@ -42,10 +42,15 @@
   --surface-dark: var(--maslow-band-navy);
   --border-hairline: var(--maslow-border-grey);
   --border-structural: var(--maslow-dark-navy);
-  --action-link: var(--maslow-accent-pink);
-  --action-link-hover: var(--maslow-hot-pink);
-  --action-button: var(--maslow-hot-pink);
-  --focus-ring: var(--maslow-accent-teal);
+  --action-button: var(--maslow-dark-navy);
+  --action-button-ink: var(--maslow-white);
+  --action-button-hover: var(--maslow-band-navy);
+  --action-inverse: var(--maslow-white);
+  --action-inverse-ink: var(--maslow-dark-navy);
+  --action-link: #9D4B8E;
+  --action-link-hover: #654C8F;
+  --action-signal: var(--maslow-hot-pink);
+  --focus-ring: #401877;
   /* Pillar mapping */
   --pillar-strategy: var(--maslow-accent-purple);
   --pillar-technology: var(--maslow-accent-teal);

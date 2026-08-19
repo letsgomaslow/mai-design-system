@@ -1,0 +1,392 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/gnbgiv",
+    "id": "gnbgiv",
+    "slide": 1,
+    "layoutId": "ed32ee7c-059a-43bd-8f0f-1e15847f97ab",
+    "layoutName": "01 Title",
+    "masterLayoutId": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+    "masterLayoutName": "Maslow Brand Master",
+    "backgroundColor": "#121D35",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Maslow Brand OS 1.0.0",
+    "colors": {
+      "accent1": "#192332",
+      "accent2": "#73C1AE",
+      "accent3": "#654C8F",
+      "accent4": "#EBA93D",
+      "accent5": "#EE7BB3",
+      "accent6": "#FFF860",
+      "bg1": "#FFFFFF",
+      "bg2": "#F6F7F9",
+      "tx1": "#192332",
+      "tx2": "#666666",
+      "dk1": "#333333",
+      "dk2": "#121D35",
+      "lt1": "#FFFFFF",
+      "lt2": "#E1E1E1",
+      "hlink": "#9D4B8E",
+      "folHlink": "#654C8F"
+    }
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "ed32ee7c-059a-43bd-8f0f-1e15847f97ab",
+      "name": "01 Title",
+      "parentLayoutId": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/ed32ee7c-059a-43bd-8f0f-1e15847f97ab/1",
+          "id": "1",
+          "name": "01 Title background",
+          "bbox": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "geometry": "rect",
+          "fillColor": "#121D35",
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/ed32ee7c-059a-43bd-8f0f-1e15847f97ab/93d6a8d9-527d-4eb1-908d-1608f7c6baf1",
+          "id": "93d6a8d9-527d-4eb1-908d-1608f7c6baf1",
+          "name": "01 Title title 0",
+          "bbox": [
+            92,
+            270,
+            1020,
+            220
+          ],
+          "text": "{{TITLE}}",
+          "textPreview": "{{TITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{TITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{TITLE}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/ed32ee7c-059a-43bd-8f0f-1e15847f97ab/2880c5e0-7fc0-4799-8c9d-a89cf132f57b",
+          "id": "2880c5e0-7fc0-4799-8c9d-a89cf132f57b",
+          "name": "01 Title subtitle 0",
+          "bbox": [
+            92,
+            512,
+            900,
+            70
+          ],
+          "text": "{{SUBTITLE}}",
+          "textPreview": "{{SUBTITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{SUBTITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{SUBTITLE}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+      "name": "Maslow Brand Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/4fqx0v29",
+      "id": "1",
+      "bbox": [
+        92,
+        58,
+        92,
+        62
+      ],
+      "geometry": "rect",
+      "alt": "Maslow AI mark in white",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "rect"
+      },
+      "asset": {
+        "assetId": "b8b45288-5bc6-4423-9baf-2ed94a2b35f2",
+        "contentType": "image/png",
+        "byteLength": 18423
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/edwrupc3",
+      "id": "2",
+      "name": "logo-label-dark",
+      "bbox": [
+        198,
+        74,
+        170,
+        26
+      ],
+      "geometry": "rect",
+      "text": "MASLOW AI",
+      "textPreview": "MASLOW AI",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "color": "#FFFFFF",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MASLOW AI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MASLOW AI",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MASLOW AI",
+              "fontSize": 12,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fe5snato",
+      "id": "3",
+      "name": "title-eyebrow",
+      "bbox": [
+        92,
+        238,
+        700,
+        30
+      ],
+      "geometry": "rect",
+      "text": "{{DATE}} · {{AUDIENCE}}",
+      "textPreview": "{{DATE}} · {{AUDIENCE}}",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "color": "#73C1AE",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{DATE}} · {{AUDIENCE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{DATE}} · {{AUDIENCE}}",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#73C1AE",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{DATE}} · {{AUDIENCE}}",
+              "fontSize": 15,
+              "color": "#73C1AE",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ojet0zu5",
+      "id": "4",
+      "name": "title-heading",
+      "bbox": [
+        92,
+        286,
+        1040,
+        196
+      ],
+      "geometry": "rect",
+      "text": "AI employees for the work that waits",
+      "textPreview": "AI employees for the work that waits",
+      "resolvedFontSize": 58,
+      "resolvedTextStyle": {
+        "fontSize": 58,
+        "color": "#FFFFFF",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AI employees for the work that waits"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AI employees for the work that waits",
+          "resolvedTextStyle": {
+            "fontSize": 58,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI employees for the work that waits",
+              "fontSize": 58,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pk7at4bq",
+      "id": "5",
+      "name": "title-subtitle",
+      "bbox": [
+        92,
+        520,
+        840,
+        44
+      ],
+      "geometry": "rect",
+      "text": "{{PRESENTER}} · {{ENGAGEMENT}}",
+      "textPreview": "{{PRESENTER}} · {{ENGAGEMENT}}",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "color": "#B8C4D9",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{PRESENTER}} · {{ENGAGEMENT}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{PRESENTER}} · {{ENGAGEMENT}}",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#B8C4D9"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{PRESENTER}} · {{ENGAGEMENT}}",
+              "fontSize": 20,
+              "color": "#B8C4D9"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

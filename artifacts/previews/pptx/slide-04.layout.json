@@ -1,0 +1,925 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/hg1dn6",
+    "id": "hg1dn6",
+    "slide": 4,
+    "layoutId": "3f4f9d5b-5f69-4bfc-92a6-be3463a298b2",
+    "layoutName": "04 Evidence",
+    "masterLayoutId": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+    "masterLayoutName": "Maslow Brand Master",
+    "backgroundColor": "#121D35",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Maslow Brand OS 1.0.0",
+    "colors": {
+      "accent1": "#192332",
+      "accent2": "#73C1AE",
+      "accent3": "#654C8F",
+      "accent4": "#EBA93D",
+      "accent5": "#EE7BB3",
+      "accent6": "#FFF860",
+      "bg1": "#FFFFFF",
+      "bg2": "#F6F7F9",
+      "tx1": "#192332",
+      "tx2": "#666666",
+      "dk1": "#333333",
+      "dk2": "#121D35",
+      "lt1": "#FFFFFF",
+      "lt2": "#E1E1E1",
+      "hlink": "#9D4B8E",
+      "folHlink": "#654C8F"
+    }
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "3f4f9d5b-5f69-4bfc-92a6-be3463a298b2",
+      "name": "04 Evidence",
+      "parentLayoutId": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/3f4f9d5b-5f69-4bfc-92a6-be3463a298b2/1",
+          "id": "1",
+          "name": "04 Evidence background",
+          "bbox": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "geometry": "rect",
+          "fillColor": "#121D35",
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/3f4f9d5b-5f69-4bfc-92a6-be3463a298b2/e30cceba-f29d-40fc-b127-cd4ed8935493",
+          "id": "e30cceba-f29d-40fc-b127-cd4ed8935493",
+          "name": "04 Evidence title 0",
+          "bbox": [
+            92,
+            102,
+            1030,
+            82
+          ],
+          "text": "{{TITLE}}",
+          "textPreview": "{{TITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{TITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{TITLE}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/3f4f9d5b-5f69-4bfc-92a6-be3463a298b2/2f1c2594-89a9-4463-8a10-97d823b6207b",
+          "id": "2f1c2594-89a9-4463-8a10-97d823b6207b",
+          "name": "04 Evidence body 0",
+          "bbox": [
+            92,
+            230,
+            1030,
+            330
+          ],
+          "text": "{{BODY}}",
+          "textPreview": "{{BODY}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{BODY}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{BODY}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+      "name": "Maslow Brand Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y18nelwj",
+      "id": "1",
+      "name": "evidence-eyebrow",
+      "bbox": [
+        92,
+        64,
+        700,
+        28
+      ],
+      "geometry": "rect",
+      "text": "{{SECTION_NUMBER}} · EVIDENCE",
+      "textPreview": "{{SECTION_NUMBER}} · EVIDENCE",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "color": "#73C1AE",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{SECTION_NUMBER}} · EVIDENCE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{SECTION_NUMBER}} · EVIDENCE",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#73C1AE",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{SECTION_NUMBER}} · EVIDENCE",
+              "fontSize": 13,
+              "color": "#73C1AE",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/loz6p0vu",
+      "id": "2",
+      "name": "evidence-heading",
+      "bbox": [
+        92,
+        108,
+        1030,
+        74
+      ],
+      "geometry": "rect",
+      "text": "{{SLIDE_TITLE}}",
+      "textPreview": "{{SLIDE_TITLE}}",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "color": "#FFFFFF",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{SLIDE_TITLE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{SLIDE_TITLE}}",
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{SLIDE_TITLE}}",
+              "fontSize": 40,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/knq5gve9",
+      "id": "3",
+      "name": "evidence-ONE-rule",
+      "bbox": [
+        92,
+        236,
+        330,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#3A4A6B",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byx4jqds",
+      "id": "4",
+      "name": "evidence-ONE-value",
+      "bbox": [
+        92,
+        272,
+        330,
+        88
+      ],
+      "geometry": "rect",
+      "text": "{{VALUE_1}}",
+      "textPreview": "{{VALUE_1}}",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "fontSize": 38,
+        "color": "#73C1AE",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{VALUE_1}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{VALUE_1}}",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#73C1AE"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{VALUE_1}}",
+              "fontSize": 38,
+              "color": "#73C1AE"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/axonalw7",
+      "id": "5",
+      "name": "evidence-ONE-claim",
+      "bbox": [
+        92,
+        382,
+        330,
+        84
+      ],
+      "geometry": "rect",
+      "text": "{{CLAIM_1}}",
+      "textPreview": "{{CLAIM_1}}",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "color": "#FFFFFF",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{CLAIM_1}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{CLAIM_1}}",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#FFFFFF"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{CLAIM_1}}",
+              "fontSize": 19,
+              "color": "#FFFFFF"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0fmlgvy",
+      "id": "6",
+      "name": "evidence-ONE-source",
+      "bbox": [
+        92,
+        500,
+        330,
+        48
+      ],
+      "geometry": "rect",
+      "text": "{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}",
+      "textPreview": "{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "color": "#B8C4D9",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#B8C4D9"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}",
+              "fontSize": 11,
+              "color": "#B8C4D9"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cz65cved",
+      "id": "7",
+      "name": "evidence-TWO-rule",
+      "bbox": [
+        466,
+        236,
+        330,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#3A4A6B",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vu1ovadw",
+      "id": "8",
+      "name": "evidence-TWO-value",
+      "bbox": [
+        466,
+        272,
+        330,
+        88
+      ],
+      "geometry": "rect",
+      "text": "{{VALUE_2}}",
+      "textPreview": "{{VALUE_2}}",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "fontSize": 38,
+        "color": "#A070A6",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{VALUE_2}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{VALUE_2}}",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#A070A6"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{VALUE_2}}",
+              "fontSize": 38,
+              "color": "#A070A6"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/utsnm5wr",
+      "id": "9",
+      "name": "evidence-TWO-claim",
+      "bbox": [
+        466,
+        382,
+        330,
+        84
+      ],
+      "geometry": "rect",
+      "text": "{{CLAIM_2}}",
+      "textPreview": "{{CLAIM_2}}",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "color": "#FFFFFF",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{CLAIM_2}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{CLAIM_2}}",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#FFFFFF"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{CLAIM_2}}",
+              "fontSize": 19,
+              "color": "#FFFFFF"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fad8b69",
+      "id": "10",
+      "name": "evidence-TWO-source",
+      "bbox": [
+        466,
+        500,
+        330,
+        48
+      ],
+      "geometry": "rect",
+      "text": "{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}",
+      "textPreview": "{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "color": "#B8C4D9",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#B8C4D9"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}",
+              "fontSize": 11,
+              "color": "#B8C4D9"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1g3uhg7u",
+      "id": "11",
+      "name": "evidence-THREE-rule",
+      "bbox": [
+        840,
+        236,
+        330,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#3A4A6B",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/edsv61o3",
+      "id": "12",
+      "name": "evidence-THREE-value",
+      "bbox": [
+        840,
+        272,
+        330,
+        88
+      ],
+      "geometry": "rect",
+      "text": "{{VALUE_3}}",
+      "textPreview": "{{VALUE_3}}",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "fontSize": 38,
+        "color": "#FFF860",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{VALUE_3}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{VALUE_3}}",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#FFF860"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{VALUE_3}}",
+              "fontSize": 38,
+              "color": "#FFF860"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fe1cf6po",
+      "id": "13",
+      "name": "evidence-THREE-claim",
+      "bbox": [
+        840,
+        382,
+        330,
+        84
+      ],
+      "geometry": "rect",
+      "text": "{{CLAIM_3}}",
+      "textPreview": "{{CLAIM_3}}",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "color": "#FFFFFF",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{CLAIM_3}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{CLAIM_3}}",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#FFFFFF"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{CLAIM_3}}",
+              "fontSize": 19,
+              "color": "#FFFFFF"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sbad4r6d",
+      "id": "14",
+      "name": "evidence-THREE-source",
+      "bbox": [
+        840,
+        500,
+        330,
+        48
+      ],
+      "geometry": "rect",
+      "text": "{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}",
+      "textPreview": "{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "color": "#B8C4D9",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#B8C4D9"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}",
+              "fontSize": 11,
+              "color": "#B8C4D9"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcjudw7y",
+      "id": "15",
+      "name": "footer-wordmark-{{FOLIO}}",
+      "bbox": [
+        92,
+        668,
+        180,
+        24
+      ],
+      "geometry": "rect",
+      "text": "MASLOW AI",
+      "textPreview": "MASLOW AI",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "color": "#B8C4D9",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MASLOW AI"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MASLOW AI",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#B8C4D9",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MASLOW AI",
+              "fontSize": 12,
+              "color": "#B8C4D9",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qpsb2187",
+      "id": "16",
+      "name": "footer-folio-{{FOLIO}}",
+      "bbox": [
+        1008,
+        668,
+        180,
+        24
+      ],
+      "geometry": "rect",
+      "text": "MASLOW AI · {{FOLIO}}",
+      "textPreview": "MASLOW AI · {{FOLIO}}",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "color": "#B8C4D9",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MASLOW AI · {{FOLIO}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MASLOW AI · {{FOLIO}}",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#B8C4D9",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MASLOW AI · {{FOLIO}}",
+              "fontSize": 11,
+              "color": "#B8C4D9",
+              "alignment": "right"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

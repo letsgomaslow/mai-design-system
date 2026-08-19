@@ -1,0 +1,22 @@
+{
+  "name": "maslow-brand-os",
+  "version": "1.0.0",
+  "description": "Maslow AI brand contract, artifact skills, templates, and release validation.",
+  "author": {
+    "name": "Maslow AI"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Maslow Brand OS",
+    "shortDescription": "Create and validate Maslow-branded work",
+    "developerName": "Maslow AI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#192332"
+  },
+  "adapter": "codex"
+}
