@@ -1,0 +1,333 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/00000001",
+    "id": "id-00000001",
+    "slide": 1,
+    "layoutId": "B74A3B7E-43FE-50B9-93BE-73503655F2DF",
+    "layoutName": "01 Title",
+    "masterLayoutId": "67E1A597-6F05-560D-88C7-347381FBFB67",
+    "masterLayoutName": "Maslow Brand Master",
+    "backgroundColor": "#121D35",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Maslow Brand OS 1.1.0",
+    "colors": {
+      "accent1": "#192332",
+      "accent2": "#73C1AE",
+      "accent3": "#654C8F",
+      "accent4": "#EBA93D",
+      "accent5": "#EE7BB3",
+      "accent6": "#FFF860",
+      "bg1": "#FFFFFF",
+      "bg2": "#F6F7F9",
+      "tx1": "#192332",
+      "tx2": "#666666",
+      "dk1": "#333333",
+      "dk2": "#121D35",
+      "lt1": "#FFFFFF",
+      "lt2": "#E1E1E1",
+      "hlink": "#9D4B8E",
+      "folHlink": "#654C8F"
+    }
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "B74A3B7E-43FE-50B9-93BE-73503655F2DF",
+      "name": "01 Title",
+      "parentLayoutId": "67E1A597-6F05-560D-88C7-347381FBFB67",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/B74A3B7E-43FE-50B9-93BE-73503655F2DF/1",
+          "id": "1",
+          "name": "01 Title background",
+          "bbox": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "geometry": "rect",
+          "fillColor": "#121D35",
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/B74A3B7E-43FE-50B9-93BE-73503655F2DF/1CE9B8D4-3652-56A0-8031-2D455432E26B",
+          "id": "1CE9B8D4-3652-56A0-8031-2D455432E26B",
+          "name": "01 Title title 0",
+          "bbox": [
+            92,
+            270,
+            1020,
+            220
+          ],
+          "text": "{{TITLE}}",
+          "textPreview": "{{TITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{TITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{TITLE}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/B74A3B7E-43FE-50B9-93BE-73503655F2DF/5916F7BC-545D-5BD0-B449-67B73CD4536C",
+          "id": "5916F7BC-545D-5BD0-B449-67B73CD4536C",
+          "name": "01 Title subtitle 0",
+          "bbox": [
+            92,
+            512,
+            900,
+            70
+          ],
+          "text": "{{SUBTITLE}}",
+          "textPreview": "{{SUBTITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{SUBTITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{SUBTITLE}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "67E1A597-6F05-560D-88C7-347381FBFB67",
+      "name": "Maslow Brand Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/00000002",
+      "id": "1",
+      "bbox": [
+        92,
+        62,
+        280,
+        45
+      ],
+      "geometry": "rect",
+      "alt": "Maslow AI complete white logo",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "imageMask": {
+        "geometry": "rect"
+      },
+      "asset": {
+        "assetId": "3417D7BB-C037-5990-91CD-946BDBD0DD30",
+        "contentType": "image/png",
+        "byteLength": 37999
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000003",
+      "id": "2",
+      "name": "title-eyebrow",
+      "bbox": [
+        92,
+        238,
+        700,
+        30
+      ],
+      "geometry": "rect",
+      "text": "{{DATE}} · {{AUDIENCE}}",
+      "textPreview": "{{DATE}} · {{AUDIENCE}}",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "color": "#73C1AE",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{DATE}} · {{AUDIENCE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{DATE}} · {{AUDIENCE}}",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#73C1AE",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{DATE}} · {{AUDIENCE}}",
+              "fontSize": 15,
+              "color": "#73C1AE",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000004",
+      "id": "3",
+      "name": "title-heading",
+      "bbox": [
+        92,
+        286,
+        1040,
+        196
+      ],
+      "geometry": "rect",
+      "text": "AI employees for the work that waits",
+      "textPreview": "AI employees for the work that waits",
+      "resolvedFontSize": 58,
+      "resolvedTextStyle": {
+        "fontSize": 58,
+        "color": "#FFFFFF",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AI employees for the work that waits"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AI employees for the work that waits",
+          "resolvedTextStyle": {
+            "fontSize": 58,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI employees for the work that waits",
+              "fontSize": 58,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000005",
+      "id": "4",
+      "name": "title-subtitle",
+      "bbox": [
+        92,
+        520,
+        840,
+        44
+      ],
+      "geometry": "rect",
+      "text": "{{PRESENTER}} · {{ENGAGEMENT}}",
+      "textPreview": "{{PRESENTER}} · {{ENGAGEMENT}}",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "color": "#B8C4D9",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{PRESENTER}} · {{ENGAGEMENT}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{PRESENTER}} · {{ENGAGEMENT}}",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#B8C4D9"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{PRESENTER}} · {{ENGAGEMENT}}",
+              "fontSize": 20,
+              "color": "#B8C4D9"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,364 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/00000046",
+    "id": "id-00000005",
+    "slide": 5,
+    "layoutId": "E514A839-022F-51EB-9C8C-674AD6F71B3A",
+    "layoutName": "05 Quote",
+    "masterLayoutId": "67E1A597-6F05-560D-88C7-347381FBFB67",
+    "masterLayoutName": "Maslow Brand Master",
+    "backgroundColor": "#F6F7F9",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Maslow Brand OS 1.1.0",
+    "colors": {
+      "accent1": "#192332",
+      "accent2": "#73C1AE",
+      "accent3": "#654C8F",
+      "accent4": "#EBA93D",
+      "accent5": "#EE7BB3",
+      "accent6": "#FFF860",
+      "bg1": "#FFFFFF",
+      "bg2": "#F6F7F9",
+      "tx1": "#192332",
+      "tx2": "#666666",
+      "dk1": "#333333",
+      "dk2": "#121D35",
+      "lt1": "#FFFFFF",
+      "lt2": "#E1E1E1",
+      "hlink": "#9D4B8E",
+      "folHlink": "#654C8F"
+    }
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "E514A839-022F-51EB-9C8C-674AD6F71B3A",
+      "name": "05 Quote",
+      "parentLayoutId": "67E1A597-6F05-560D-88C7-347381FBFB67",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/E514A839-022F-51EB-9C8C-674AD6F71B3A/1",
+          "id": "1",
+          "name": "05 Quote background",
+          "bbox": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "geometry": "rect",
+          "fillColor": "#F6F7F9",
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/E514A839-022F-51EB-9C8C-674AD6F71B3A/C9402774-FE28-5514-A868-4DBFD6CDAD6A",
+          "id": "C9402774-FE28-5514-A868-4DBFD6CDAD6A",
+          "name": "05 Quote title 0",
+          "bbox": [
+            130,
+            230,
+            1000,
+            230
+          ],
+          "text": "{{TITLE}}",
+          "textPreview": "{{TITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{TITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{TITLE}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/E514A839-022F-51EB-9C8C-674AD6F71B3A/EBA14900-FA13-5EA5-80BF-1B7E053D7BA3",
+          "id": "EBA14900-FA13-5EA5-80BF-1B7E053D7BA3",
+          "name": "05 Quote subtitle 0",
+          "bbox": [
+            130,
+            490,
+            900,
+            70
+          ],
+          "text": "{{SUBTITLE}}",
+          "textPreview": "{{SUBTITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{SUBTITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{SUBTITLE}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "67E1A597-6F05-560D-88C7-347381FBFB67",
+      "name": "Maslow Brand Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000047",
+      "id": "1",
+      "name": "quote-mark",
+      "bbox": [
+        130,
+        102,
+        160,
+        120
+      ],
+      "geometry": "rect",
+      "text": "“",
+      "textPreview": "“",
+      "resolvedFontSize": 92,
+      "resolvedTextStyle": {
+        "fontSize": 92,
+        "color": "#73C1AE",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "“"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "“",
+          "resolvedTextStyle": {
+            "fontSize": 92,
+            "color": "#73C1AE",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "“",
+              "fontSize": 92,
+              "color": "#73C1AE",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000048",
+      "id": "2",
+      "name": "quote-text",
+      "bbox": [
+        130,
+        238,
+        1000,
+        210
+      ],
+      "geometry": "rect",
+      "text": "{{VERIFIED_QUOTE}}",
+      "textPreview": "{{VERIFIED_QUOTE}}",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "fontSize": 36,
+        "color": "#192332",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{VERIFIED_QUOTE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{VERIFIED_QUOTE}}",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "color": "#192332",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{VERIFIED_QUOTE}}",
+              "fontSize": 36,
+              "color": "#192332",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000049",
+      "id": "3",
+      "name": "quote-attribution",
+      "bbox": [
+        130,
+        496,
+        820,
+        34
+      ],
+      "geometry": "rect",
+      "text": "{{ATTRIBUTION}}",
+      "textPreview": "{{ATTRIBUTION}}",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "color": "#666666",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{ATTRIBUTION}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{ATTRIBUTION}}",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#666666"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{ATTRIBUTION}}",
+              "fontSize": 16,
+              "color": "#666666"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000050",
+      "id": "4",
+      "name": "quote-source",
+      "bbox": [
+        130,
+        542,
+        820,
+        32
+      ],
+      "geometry": "rect",
+      "text": "{{EVIDENCE_STATUS}} · {{SOURCE}}",
+      "textPreview": "{{EVIDENCE_STATUS}} · {{SOURCE}}",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "color": "#654C8F",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{EVIDENCE_STATUS}} · {{SOURCE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{EVIDENCE_STATUS}} · {{SOURCE}}",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#654C8F"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{EVIDENCE_STATUS}} · {{SOURCE}}",
+              "fontSize": 11,
+              "color": "#654C8F"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

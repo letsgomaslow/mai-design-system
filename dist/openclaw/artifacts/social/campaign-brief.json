@@ -1,0 +1,19 @@
+{
+  "$schema": "../src/schemas/artifact-brief.schema.json",
+  "format": "social",
+  "audience": "{{AUDIENCE}}",
+  "objective": "{{OBJECTIVE}}",
+  "cta": "{{CTA}}",
+  "claims": [
+    {
+      "text": "{{MESSAGE_OR_CLAIM}}",
+      "evidenceStatus": "illustrative",
+      "source": "{{SOURCE_OR_TEMPLATE_NOTE}}"
+    }
+  ],
+  "provenance": {
+    "owner": "{{OWNER}}",
+    "approvedBy": "{{APPROVER}}",
+    "approvedAt": "{{DATE}}"
+  }
+}

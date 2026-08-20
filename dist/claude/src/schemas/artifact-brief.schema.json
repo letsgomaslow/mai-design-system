@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maslow.ai/schemas/artifact-brief.schema.json",
+  "title": "Maslow Artifact Brief",
+  "type": "object",
+  "required": ["format", "audience", "objective", "cta", "claims"],
+  "properties": {
+    "format": { "type": "string", "enum": ["web", "pptx", "docx", "pdf", "social"] },
+    "audience": { "type": "string", "minLength": 1 },
+    "objective": { "type": "string", "minLength": 1 },
+    "cta": { "type": "string", "minLength": 1 },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text", "evidenceStatus"],
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "evidenceStatus": { "type": "string", "enum": ["production", "modeled", "illustrative", "in_preparation"] },
+          "source": { "type": "string" }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "evidenceStatus": { "enum": ["production", "modeled"] } } },
+            "then": { "required": ["source"] }
+          }
+        ],
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

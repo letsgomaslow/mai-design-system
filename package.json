@@ -1,0 +1,27 @@
+{
+  "name": "@maslow-ai/brand-os",
+  "version": "1.1.0",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist/npm"
+  ],
+  "exports": {
+    "./tokens.css": "./dist/npm/tokens.css",
+    "./tokens": {
+      "types": "./dist/npm/tokens.d.ts",
+      "import": "./dist/npm/tokens.js"
+    },
+    "./assets/*": "./dist/npm/assets/*",
+    "./manifest": "./dist/npm/manifest.json"
+  },
+  "description": "Canonical Maslow AI brand contract, agent skills, templates, and validators.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "build:artifacts": "node scripts/build-artifacts.mjs",
+    "package:adapters": "node scripts/package-adapters.mjs",
+    "verify": "npm test && npm run build:artifacts && npm run build && npm run package:adapters && node scripts/validate.mjs --mode release --input fixtures/release-valid.html"
+  }
+}

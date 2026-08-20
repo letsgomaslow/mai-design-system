@@ -1,0 +1,331 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/00000006",
+    "id": "id-00000002",
+    "slide": 2,
+    "layoutId": "764F5B3D-6B50-5F32-B465-E5E01C5DD277",
+    "layoutName": "02 Section",
+    "masterLayoutId": "67E1A597-6F05-560D-88C7-347381FBFB67",
+    "masterLayoutName": "Maslow Brand Master",
+    "backgroundColor": "#121D35",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Maslow Brand OS 1.1.0",
+    "colors": {
+      "accent1": "#192332",
+      "accent2": "#73C1AE",
+      "accent3": "#654C8F",
+      "accent4": "#EBA93D",
+      "accent5": "#EE7BB3",
+      "accent6": "#FFF860",
+      "bg1": "#FFFFFF",
+      "bg2": "#F6F7F9",
+      "tx1": "#192332",
+      "tx2": "#666666",
+      "dk1": "#333333",
+      "dk2": "#121D35",
+      "lt1": "#FFFFFF",
+      "lt2": "#E1E1E1",
+      "hlink": "#9D4B8E",
+      "folHlink": "#654C8F"
+    }
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "764F5B3D-6B50-5F32-B465-E5E01C5DD277",
+      "name": "02 Section",
+      "parentLayoutId": "67E1A597-6F05-560D-88C7-347381FBFB67",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/764F5B3D-6B50-5F32-B465-E5E01C5DD277/1",
+          "id": "1",
+          "name": "02 Section background",
+          "bbox": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "geometry": "rect",
+          "fillColor": "#121D35",
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/764F5B3D-6B50-5F32-B465-E5E01C5DD277/05D215CE-981A-5E4F-BBE4-04E18078DBAF",
+          "id": "05D215CE-981A-5E4F-BBE4-04E18078DBAF",
+          "name": "02 Section title 0",
+          "bbox": [
+            92,
+            430,
+            950,
+            130
+          ],
+          "text": "{{TITLE}}",
+          "textPreview": "{{TITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{TITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{TITLE}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout/764F5B3D-6B50-5F32-B465-E5E01C5DD277/6136568B-704F-5D88-A554-5A571CFD7D51",
+          "id": "6136568B-704F-5D88-A554-5A571CFD7D51",
+          "name": "02 Section subtitle 0",
+          "bbox": [
+            92,
+            386,
+            650,
+            34
+          ],
+          "text": "{{SUBTITLE}}",
+          "textPreview": "{{SUBTITLE}}",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "{{SUBTITLE}}",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "{{SUBTITLE}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "67E1A597-6F05-560D-88C7-347381FBFB67",
+      "name": "Maslow Brand Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000007",
+      "id": "1",
+      "name": "section-step-marker",
+      "bbox": [
+        930,
+        60,
+        250,
+        220
+      ],
+      "geometry": "rect",
+      "text": "02",
+      "textPreview": "02",
+      "resolvedFontSize": 132,
+      "resolvedTextStyle": {
+        "fontSize": 132,
+        "color": "#73C1AE",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02",
+          "resolvedTextStyle": {
+            "fontSize": 132,
+            "color": "#73C1AE",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "02",
+              "fontSize": 132,
+              "color": "#73C1AE",
+              "bold": true,
+              "alignment": "right"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000008",
+      "id": "2",
+      "name": "section-eyebrow",
+      "bbox": [
+        92,
+        388,
+        720,
+        34
+      ],
+      "geometry": "rect",
+      "text": "{{SECTION_LABEL}}",
+      "textPreview": "{{SECTION_LABEL}}",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "color": "#73C1AE",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{SECTION_LABEL}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{SECTION_LABEL}}",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#73C1AE",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{SECTION_LABEL}}",
+              "fontSize": 15,
+              "color": "#73C1AE",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000009",
+      "id": "3",
+      "name": "section-heading",
+      "bbox": [
+        92,
+        438,
+        960,
+        116
+      ],
+      "geometry": "rect",
+      "text": "{{SECTION_TITLE}}",
+      "textPreview": "{{SECTION_TITLE}}",
+      "resolvedFontSize": 52,
+      "resolvedTextStyle": {
+        "fontSize": 52,
+        "color": "#FFFFFF",
+        "bold": true,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "{{SECTION_TITLE}}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "{{SECTION_TITLE}}",
+          "resolvedTextStyle": {
+            "fontSize": 52,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{{SECTION_TITLE}}",
+              "fontSize": 52,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/00000010",
+      "id": "4",
+      "name": "section-signal",
+      "bbox": [
+        92,
+        584,
+        64,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#EE7BB3",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

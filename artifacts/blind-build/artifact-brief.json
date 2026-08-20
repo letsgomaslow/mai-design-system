@@ -1,0 +1,19 @@
+{
+  "$schema": "../../src/schemas/artifact-brief.schema.json",
+  "format": "social",
+  "audience": "Operations leaders with work waiting on overloaded teams",
+  "objective": "Invite a workflow ownership working session",
+  "cta": "Book a working session",
+  "claims": [
+    {
+      "text": "AI employees for the work that waits on your busiest people.",
+      "evidenceStatus": "illustrative",
+      "source": "Maslow Brand OS blind-build fixture"
+    }
+  ],
+  "provenance": {
+    "owner": "Maslow AI",
+    "approvedBy": "Fixture only",
+    "approvedAt": "2026-08-19"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maslow.ai/schemas/validation-report.schema.json",
+  "title": "Maslow Validation Report",
+  "type": "object",
+  "required": ["mode", "input", "blocking", "violations"],
+  "properties": {
+    "mode": { "type": "string", "enum": ["draft", "release"] },
+    "input": { "type": "string" },
+    "blocking": { "type": "boolean" },
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ruleId", "severity", "location", "message", "blocking"],
+        "properties": {
+          "ruleId": { "type": "string" },
+          "severity": { "type": "string", "enum": ["warning", "error"] },
+          "location": { "type": "string" },
+          "message": { "type": "string" },
+          "blocking": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
