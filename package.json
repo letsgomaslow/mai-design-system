@@ -22,6 +22,6 @@
     "validate": "node scripts/validate.mjs",
     "build:artifacts": "node scripts/build-artifacts.mjs",
     "package:adapters": "node scripts/package-adapters.mjs",
-    "verify": "npm test && npm run build && npm run build:artifacts && npm run package:adapters && node scripts/validate.mjs --mode release --input fixtures/release-valid.html"
+    "verify": "npm test && npm run build:artifacts && npm run build && npm run package:adapters && node scripts/validate.mjs --mode release --input fixtures/release-valid.html"
   }
 }

@@ -41,6 +41,29 @@ function run(script, args = []) {
   });
 }
 
+const deterministicArtifactPaths = [
+  "artifacts/pptx/maslow-brand-starter.pptx",
+  "artifacts/docx/maslow-invoice-template.docx",
+  "artifacts/docx/maslow-memo-template.docx",
+  "artifacts/docx/maslow-proposal-template.docx",
+  "artifacts/pdf/maslow-brand-starter.pdf",
+  "artifacts/pdf/maslow-invoice-template.pdf",
+  "artifacts/pdf/maslow-memo-template.pdf",
+  "artifacts/pdf/maslow-proposal-template.pdf",
+  "artifacts/blind-build/maslow-workflow-brief.pptx",
+  "artifacts/blind-build/maslow-workflow-proposal.docx",
+  "artifacts/blind-build/pdf/maslow-workflow-brief.pdf",
+  "artifacts/blind-build/pdf/maslow-workflow-proposal.pdf",
+  "artifacts/previews/pptx/maslow-brand-starter.inspect.ndjson",
+  ...Array.from({ length: 6 }, (_, index) =>
+    `artifacts/previews/pptx/slide-${String(index + 1).padStart(2, "0")}.layout.json`,
+  ),
+];
+
+function artifactHashes() {
+  return Object.fromEntries(deterministicArtifactPaths.map((path) => [path, sha256(resolve(root, path))]));
+}
+
 test("designer-approved logo masters remain byte-identical and retain their original canvases", () => {
   for (const [name, width, height, expectedHash] of approvedDesignerLogos) {
     const path = resolve(root, "assets", "logos", name);
@@ -82,6 +105,13 @@ test("social SVG starters embed the correct complete designer logo masters", () 
     const source = readFileSync(resolve(root, "artifacts/social", name), "utf8");
     assert.equal(source.includes(`data:image/png;base64,${logo}`), true, `${name} must embed the approved complete logo bytes`);
   }
+});
+
+test("native artifact builds are byte-stable when canonical sources do not change", { timeout: 120_000 }, () => {
+  const before = artifactHashes();
+  const result = run("scripts/build-artifacts.mjs");
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  assert.deepEqual(artifactHashes(), before);
 });
 
 test("canonical contract exposes the approved action, shape, and evidence semantics", () => {
