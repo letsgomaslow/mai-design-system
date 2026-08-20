@@ -8,9 +8,9 @@ description: Use when creating, editing, reviewing, or exporting any Maslow AI b
 Apply the canonical Maslow contract before making design or copy decisions.
 
 1. Read `../../src/brand-contract.md` completely.
-2. Use `../../src/tokens.json` for exact values and `../../src/policies.json` for messaging and evidence rules.
+2. Use `../../src/tokens.json` for exact values, `../../src/policies.json` for messaging and evidence rules, and `../../src/logo-assets.json` for the complete approved logo catalog.
 3. Start recurring work from an approved template or generator. Do not restyle from memory.
-4. Use approved files from `../../assets/`; never redraw the mark.
+4. Use only the seven immutable designer PNG masters in `../../assets/logos/`. Never redraw, recolor, trace, crop, trim, retype, or re-encode them.
 5. Mark every claim as production, modeled, illustrative, or in preparation. Add provenance for production evidence.
 6. Run `node scripts/validate.mjs --mode draft --input <file>` while working.
 7. Run release validation before delivery. Fix every blocking violation.

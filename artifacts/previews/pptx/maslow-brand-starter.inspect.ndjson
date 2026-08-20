@@ -1,76 +1,74 @@
-{"kind":"layout","layoutId":"fe9d4ab2-3e20-46b3-b242-73422a52d98a","name":"Master","type":"master"}
-{"kind":"layout","layoutId":"1ce7b108-13e4-49f9-bb22-b239accfd55e","name":"Title Slide","type":"title"}
-{"kind":"layout","layoutId":"d9465b7b-153e-4ed8-bcf7-62a88c295253","name":"Maslow Brand Master","type":"master"}
-{"kind":"layout","layoutId":"ed32ee7c-059a-43bd-8f0f-1e15847f97ab","name":"01 Title","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"subtitle","type":"subtitle","textPreview":"{{SUBTITLE}}"}]}
-{"kind":"layout","layoutId":"0507275c-0dbe-4cea-af0f-f5268a1f988c","name":"02 Section","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"subtitle","type":"subtitle","textPreview":"{{SUBTITLE}}"}]}
-{"kind":"layout","layoutId":"a88f8170-7bb9-4fd6-b570-b1f623c88ac0","name":"03 Content","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"body","type":"body","textPreview":"{{BODY}}"}]}
-{"kind":"layout","layoutId":"3f4f9d5b-5f69-4bfc-92a6-be3463a298b2","name":"04 Evidence","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"body","type":"body","textPreview":"{{BODY}}"}]}
-{"kind":"layout","layoutId":"e109ee9b-2efb-47e4-b381-a087927d0f1c","name":"05 Quote","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"subtitle","type":"subtitle","textPreview":"{{SUBTITLE}}"}]}
-{"kind":"layout","layoutId":"35bb68d9-aa83-47f0-bb9a-126252722c91","name":"06 Closing","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"subtitle","type":"subtitle","textPreview":"{{SUBTITLE}}"}]}
-{"kind":"slide","id":"sl/gnbgiv","slide":1,"title":"MASLOW AI","textShapes":4}
-{"kind":"textbox","id":"sh/edwrupc3","slide":1,"name":"logo-label-dark","text":"MASLOW AI","textPreview":"MASLOW AI","textChars":9,"textLines":1,"bbox":[198,74,170,26]}
-{"kind":"textbox","id":"sh/fe5snato","slide":1,"name":"title-eyebrow","text":"{{DATE}} · {{AUDIENCE}}","textPreview":"{{DATE}} · {{AUDIENCE}}","textChars":23,"textLines":1,"bbox":[92,238,700,30]}
-{"kind":"textbox","id":"sh/ojet0zu5","slide":1,"name":"title-heading","text":"AI employees for the work that waits","textPreview":"AI employees for the work that waits","textChars":36,"textLines":1,"bbox":[92,286,1040,196]}
-{"kind":"textbox","id":"sh/pk7at4bq","slide":1,"name":"title-subtitle","text":"{{PRESENTER}} · {{ENGAGEMENT}}","textPreview":"{{PRESENTER}} · {{ENGAGEMENT}}","textChars":30,"textLines":1,"bbox":[92,520,840,44]}
-{"kind":"image","id":"im/4fqx0v29","slide":1,"name":"","geometry":"rect","alt":"Maslow AI mark in white","bbox":[92,58,92,62]}
-{"kind":"notes","id":"nt/gnbgiv","slide":1,"text":"Layout 01 Title. Replace all variables. Keep the external position intact unless an approved campaign brief requires a narrower headline."}
-{"kind":"slide","id":"sl/aw1trj","slide":2,"title":"02","textShapes":3}
-{"kind":"textbox","id":"sh/hsb69cn2","slide":2,"name":"section-step-marker","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[930,60,250,220]}
-{"kind":"textbox","id":"sh/u50nyhob","slide":2,"name":"section-eyebrow","text":"{{SECTION_LABEL}}","textPreview":"{{SECTION_LABEL}}","textChars":17,"textLines":1,"bbox":[92,388,720,34]}
-{"kind":"textbox","id":"sh/v6to72pw","slide":2,"name":"section-heading","text":"{{SECTION_TITLE}}","textPreview":"{{SECTION_TITLE}}","textChars":17,"textLines":1,"bbox":[92,438,960,116]}
-{"kind":"shape","id":"sh/83i5w76l","slide":2,"name":"section-signal","bbox":[92,584,64,4]}
-{"kind":"notes","id":"nt/aw1trj","slide":2,"text":"Layout 02 Section. The pink rule is a small signal. Keep all readable text in navy, white, teal, or accessible purple."}
-{"kind":"slide","id":"sl/okd63j","slide":3,"title":"{{SECTION_NUMBER}} · {{SECTION_LABEL}}","textShapes":13}
-{"kind":"textbox","id":"sh/9wz6lkj6","slide":3,"name":"content-eyebrow","text":"{{SECTION_NUMBER}} · {{SECTION_LABEL}}","textPreview":"{{SECTION_NUMBER}} · {{SECTION_LABEL}}","textChars":38,"textLines":1,"bbox":[92,62,700,28]}
-{"kind":"textbox","id":"sh/mto7qpkv","slide":3,"name":"content-heading","text":"{{SLIDE_TITLE}}","textPreview":"{{SLIDE_TITLE}}","textChars":15,"textLines":1,"bbox":[92,104,1030,74]}
-{"kind":"shape","id":"sh/nuxoju1g","slide":3,"name":"content-top-rule","bbox":[92,210,1096,2]}
-{"kind":"textbox","id":"sh/wzqpwz2x","slide":3,"name":"content-row-01-number","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[92,232,70,36]}
-{"kind":"textbox","id":"sh/x0z6p4ji","slide":3,"name":"content-row-01-heading","text":"{{WORKFLOW_ONE}}","textPreview":"{{WORKFLOW_ONE}}","textChars":16,"textLines":1,"bbox":[186,232,370,62]}
-{"kind":"textbox","id":"sh/ax87upkr","slide":3,"name":"content-row-01-body","text":"{{OWNER_ONE}} owns {{DELIVERABLE_ONE}}.","textPreview":"{{OWNER_ONE}} owns {{DELIVERABLE_ONE}}.","textChars":39,"textLines":1,"bbox":[580,232,608,66]}
-{"kind":"shape","id":"sh/byhonu1c","slide":3,"name":"content-row-01-rule","bbox":[92,326,1096,1]}
-{"kind":"textbox","id":"sh/c3m5kv2t","slide":3,"name":"content-row-02-number","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[92,360,70,36]}
-{"kind":"textbox","id":"sh/d4v6d03y","slide":3,"name":"content-row-02-heading","text":"{{WORKFLOW_TWO}}","textPreview":"{{WORKFLOW_TWO}}","textChars":16,"textLines":1,"bbox":[186,360,370,62]}
-{"kind":"textbox","id":"sh/lszedsz2","slide":3,"name":"content-row-02-body","text":"{{OWNER_TWO}} owns {{DELIVERABLE_TWO}}.","textPreview":"{{OWNER_TWO}} owns {{DELIVERABLE_TWO}}.","textChars":39,"textLines":1,"bbox":[580,360,608,66]}
-{"kind":"shape","id":"sh/krqx4nih","slide":3,"name":"content-row-02-rule","bbox":[92,454,1096,1]}
-{"kind":"textbox","id":"sh/zqxwb2hw","slide":3,"name":"content-row-03-number","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[92,488,70,36]}
-{"kind":"textbox","id":"sh/y5of2x0r","slide":3,"name":"content-row-03-heading","text":"{{WORKFLOW_THREE}}","textPreview":"{{WORKFLOW_THREE}}","textChars":18,"textLines":1,"bbox":[186,488,370,62]}
-{"kind":"textbox","id":"sh/9wzehcze","slide":3,"name":"content-row-03-body","text":"{{OWNER_THREE}} owns {{DELIVERABLE_THREE}}.","textPreview":"{{OWNER_THREE}} owns {{DELIVERABLE_THREE}}.","textChars":43,"textLines":1,"bbox":[580,488,608,66]}
-{"kind":"shape","id":"sh/8vqx87it","slide":3,"name":"content-row-03-rule","bbox":[92,582,1096,1]}
-{"kind":"textbox","id":"sh/7uhwf2h8","slide":3,"name":"footer-wordmark-{{FOLIO}}","text":"MASLOW AI","textPreview":"MASLOW AI","textChars":9,"textLines":1,"bbox":[92,668,180,24]}
-{"kind":"textbox","id":"sh/mt8f6x0n","slide":3,"name":"footer-folio-{{FOLIO}}","text":"MASLOW AI · {{FOLIO}}","textPreview":"MASLOW AI · {{FOLIO}}","textChars":21,"textLines":1,"bbox":[1008,668,180,24]}
-{"kind":"notes","id":"nt/okd63j","slide":3,"text":"Layout 03 Content. Each row names the waiting workflow, responsible owner, and deliverable. Keep one communication job on the slide."}
-{"kind":"slide","id":"sl/hg1dn6","slide":4,"title":"{{SECTION_NUMBER}} · EVIDENCE","textShapes":13}
-{"kind":"textbox","id":"sh/y18nelwj","slide":4,"name":"evidence-eyebrow","text":"{{SECTION_NUMBER}} · EVIDENCE","textPreview":"{{SECTION_NUMBER}} · EVIDENCE","textChars":29,"textLines":1,"bbox":[92,64,700,28]}
-{"kind":"textbox","id":"sh/loz6p0vu","slide":4,"name":"evidence-heading","text":"{{SLIDE_TITLE}}","textPreview":"{{SLIDE_TITLE}}","textChars":15,"textLines":1,"bbox":[92,108,1030,74]}
-{"kind":"shape","id":"sh/knq5gve9","slide":4,"name":"evidence-ONE-rule","bbox":[92,236,330,1]}
-{"kind":"textbox","id":"sh/byx4jqds","slide":4,"name":"evidence-ONE-value","text":"{{VALUE_1}}","textPreview":"{{VALUE_1}}","textChars":11,"textLines":1,"bbox":[92,272,330,88]}
-{"kind":"textbox","id":"sh/axonalw7","slide":4,"name":"evidence-ONE-claim","text":"{{CLAIM_1}}","textPreview":"{{CLAIM_1}}","textChars":11,"textLines":1,"bbox":[92,382,330,84]}
-{"kind":"textbox","id":"sh/x0fmlgvy","slide":4,"name":"evidence-ONE-source","text":"{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}","textPreview":"{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}","textChars":40,"textLines":1,"bbox":[92,500,330,48]}
-{"kind":"shape","id":"sh/cz65cved","slide":4,"name":"evidence-TWO-rule","bbox":[466,236,330,1]}
-{"kind":"textbox","id":"sh/vu1ovadw","slide":4,"name":"evidence-TWO-value","text":"{{VALUE_2}}","textPreview":"{{VALUE_2}}","textChars":11,"textLines":1,"bbox":[466,272,330,88]}
-{"kind":"textbox","id":"sh/utsnm5wr","slide":4,"name":"evidence-TWO-claim","text":"{{CLAIM_2}}","textPreview":"{{CLAIM_2}}","textChars":11,"textLines":1,"bbox":[466,382,330,84]}
-{"kind":"textbox","id":"sh/0fad8b69","slide":4,"name":"evidence-TWO-source","text":"{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}","textPreview":"{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}","textChars":40,"textLines":1,"bbox":[466,500,330,48]}
-{"kind":"shape","id":"sh/1g3uhg7u","slide":4,"name":"evidence-THREE-rule","bbox":[840,236,330,1]}
-{"kind":"textbox","id":"sh/edsv61o3","slide":4,"name":"evidence-THREE-value","text":"{{VALUE_3}}","textPreview":"{{VALUE_3}}","textChars":11,"textLines":1,"bbox":[840,272,330,88]}
-{"kind":"textbox","id":"sh/fe1cf6po","slide":4,"name":"evidence-THREE-claim","text":"{{CLAIM_3}}","textPreview":"{{CLAIM_3}}","textChars":11,"textLines":1,"bbox":[840,382,330,84]}
-{"kind":"textbox","id":"sh/sbad4r6d","slide":4,"name":"evidence-THREE-source","text":"{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}","textPreview":"{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}","textChars":44,"textLines":1,"bbox":[840,500,330,48]}
-{"kind":"textbox","id":"sh/dcjudw7y","slide":4,"name":"footer-wordmark-{{FOLIO}}","text":"MASLOW AI","textPreview":"MASLOW AI","textChars":9,"textLines":1,"bbox":[92,668,180,24]}
-{"kind":"textbox","id":"sh/qpsb2187","slide":4,"name":"footer-folio-{{FOLIO}}","text":"MASLOW AI · {{FOLIO}}","textPreview":"MASLOW AI · {{FOLIO}}","textChars":21,"textLines":1,"bbox":[1008,668,180,24]}
-{"kind":"notes","id":"nt/hg1dn6","slide":4,"text":"Layout 04 Evidence. Every claim requires production, modeled, illustrative, or in_preparation plus a source. Put longer provenance here in speaker notes."}
-{"kind":"slide","id":"sl/hqr4x3","slide":5,"title":"“","textShapes":4}
-{"kind":"textbox","id":"sh/a1of614v","slide":5,"name":"quote-mark","text":"“","textPreview":"“","textChars":1,"textLines":1,"bbox":[130,102,160,120]}
-{"kind":"textbox","id":"sh/x4fehgnm","slide":5,"name":"quote-text","text":"{{VERIFIED_QUOTE}}","textPreview":"{{VERIFIED_QUOTE}}","textChars":18,"textLines":1,"bbox":[130,238,1000,210]}
-{"kind":"textbox","id":"sh/c36x8bm1","slide":5,"name":"quote-attribution","text":"{{ATTRIBUTION}}","textPreview":"{{ATTRIBUTION}}","textChars":15,"textLines":1,"bbox":[130,496,820,34]}
-{"kind":"textbox","id":"sh/nydwb65k","slide":5,"name":"quote-source","text":"{{EVIDENCE_STATUS}} · {{SOURCE}}","textPreview":"{{EVIDENCE_STATUS}} · {{SOURCE}}","textChars":32,"textLines":1,"bbox":[130,542,820,32]}
-{"kind":"notes","id":"nt/hqr4x3","slide":5,"text":"Layout 05 Quote. Do not release an unsourced quote. If the quote is an illustrative writing pattern, label it illustrative on the slide."}
-{"kind":"slide","id":"sl/kstlnx","slide":6,"title":"MASLOW AI","textShapes":6}
-{"kind":"textbox","id":"sh/xgzedsrm","slide":6,"name":"logo-label-light","text":"MASLOW AI","textPreview":"MASLOW AI","textChars":9,"textLines":1,"bbox":[198,74,170,26]}
-{"kind":"textbox","id":"sh/wfqd47a1","slide":6,"name":"closing-heading","text":"{{NEXT_ACTION_HEADLINE}}","textPreview":"{{NEXT_ACTION_HEADLINE}}","textChars":24,"textLines":1,"bbox":[92,224,1050,150]}
-{"kind":"shape","id":"sh/jihwf29s","slide":6,"name":"closing-action","bbox":[92,424,420,72]}
-{"kind":"textbox","id":"sh/ih8f6xs7","slide":6,"name":"closing-action-label","text":"{{CTA_LABEL}}","textPreview":"{{CTA_LABEL}}","textChars":13,"textLines":1,"bbox":[120,446,350,28]}
-{"kind":"shape","id":"sh/5kjehcri","slide":6,"name":"closing-action-signal","bbox":[92,492,48,4]}
-{"kind":"textbox","id":"sh/kjqx87ad","slide":6,"name":"closing-contact","text":"{{CONTACT}}","textPreview":"{{CONTACT}}","textChars":11,"textLines":1,"bbox":[92,536,700,34]}
-{"kind":"textbox","id":"sh/zmxw3it8","slide":6,"name":"footer-wordmark-{{FOLIO}}","text":"MASLOW AI","textPreview":"MASLOW AI","textChars":9,"textLines":1,"bbox":[92,668,180,24]}
-{"kind":"textbox","id":"sh/elovuds3","slide":6,"name":"footer-folio-{{FOLIO}}","text":"MASLOW AI · {{FOLIO}}","textPreview":"MASLOW AI · {{FOLIO}}","textChars":21,"textLines":1,"bbox":[1008,668,180,24]}
-{"kind":"image","id":"im/f2lsfe90","slide":6,"name":"","geometry":"rect","alt":"Maslow AI mark in navy","bbox":[92,58,92,62]}
-{"kind":"notes","id":"nt/kstlnx","slide":6,"text":"Layout 06 Closing. End on one explicit next action. The action is navy on white; pink remains a small signal."}
+{"kind":"layout","layoutId":"fab45eed-6d74-496f-ba92-dfe2cab4b86e","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"4a329fac-949c-4f55-931b-380b670a8ddc","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c","name":"Maslow Brand Master","type":"master"}
+{"kind":"layout","layoutId":"76846f58-b414-44d6-93c9-b1fd7b54221f","name":"01 Title","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"subtitle","type":"subtitle","textPreview":"{{SUBTITLE}}"}]}
+{"kind":"layout","layoutId":"0356dfff-847f-438c-9b42-ed266a41e52c","name":"02 Section","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"subtitle","type":"subtitle","textPreview":"{{SUBTITLE}}"}]}
+{"kind":"layout","layoutId":"3df00db4-6088-49d6-83e4-681fa756b46a","name":"03 Content","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"body","type":"body","textPreview":"{{BODY}}"}]}
+{"kind":"layout","layoutId":"df2b7768-d8ce-4014-8b95-466f53a02211","name":"04 Evidence","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"body","type":"body","textPreview":"{{BODY}}"}]}
+{"kind":"layout","layoutId":"7441d3a6-ccc5-40d8-8f36-702caa28d9c7","name":"05 Quote","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"subtitle","type":"subtitle","textPreview":"{{SUBTITLE}}"}]}
+{"kind":"layout","layoutId":"1bdd8fba-9667-4959-9b18-a9f1f5806ca0","name":"06 Closing","placeholders":[{"name":"title","type":"title","textPreview":"{{TITLE}}"},{"name":"subtitle","type":"subtitle","textPreview":"{{SUBTITLE}}"}]}
+{"kind":"slide","id":"sl/vhti61","slide":1,"title":"{{DATE}} · {{AUDIENCE}}","textShapes":3}
+{"kind":"textbox","id":"sh/9sjutk3m","slide":1,"name":"title-eyebrow","text":"{{DATE}} · {{AUDIENCE}}","textPreview":"{{DATE}} · {{AUDIENCE}}","textChars":23,"textLines":1,"bbox":[92,238,700,30]}
+{"kind":"textbox","id":"sh/8rat0f21","slide":1,"name":"title-heading","text":"AI employees for the work that waits","textPreview":"AI employees for the work that waits","textChars":36,"textLines":1,"bbox":[92,286,1040,196]}
+{"kind":"textbox","id":"sh/vu1cvulc","slide":1,"name":"title-subtitle","text":"{{PRESENTER}} · {{ENGAGEMENT}}","textPreview":"{{PRESENTER}} · {{ENGAGEMENT}}","textChars":30,"textLines":1,"bbox":[92,520,840,44]}
+{"kind":"image","id":"im/7mxkbalo","slide":1,"name":"","geometry":"rect","alt":"Maslow AI complete white logo","bbox":[92,62,280,45]}
+{"kind":"notes","id":"nt/vhti61","slide":1,"text":"Layout 01 Title. Replace all variables. Keep the external position intact unless an approved campaign brief requires a narrower headline."}
+{"kind":"slide","id":"sl/ayn4rk","slide":2,"title":"02","textShapes":3}
+{"kind":"textbox","id":"sh/jm10jupc","slide":2,"name":"section-step-marker","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[930,60,250,220]}
+{"kind":"textbox","id":"sh/kna1sz6x","slide":2,"name":"section-eyebrow","text":"{{SECTION_LABEL}}","textPreview":"{{SECTION_LABEL}}","textChars":17,"textLines":1,"bbox":[92,388,720,34]}
+{"kind":"textbox","id":"sh/lojil47i","slide":2,"name":"section-heading","text":"{{SECTION_TITLE}}","textPreview":"{{SECTION_TITLE}}","textChars":17,"textLines":1,"bbox":[92,438,960,116]}
+{"kind":"shape","id":"sh/ax8jm5ov","slide":2,"name":"section-signal","bbox":[92,584,64,4]}
+{"kind":"notes","id":"nt/ayn4rk","slide":2,"text":"Layout 02 Section. The pink rule is a small signal. Keep all readable text in navy, white, teal, or accessible purple."}
+{"kind":"slide","id":"sl/xe6jr7","slide":3,"title":"{{SECTION_NUMBER}} · {{SECTION_LABEL}}","textShapes":13}
+{"kind":"textbox","id":"sh/u5sfuh43","slide":3,"name":"content-eyebrow","text":"{{SECTION_NUMBER}} · {{SECTION_LABEL}}","textPreview":"{{SECTION_NUMBER}} · {{SECTION_LABEL}}","textChars":38,"textLines":1,"bbox":[92,62,700,28]}
+{"kind":"textbox","id":"sh/h8jepwne","slide":3,"name":"content-heading","text":"{{SLIDE_TITLE}}","textPreview":"{{SLIDE_TITLE}}","textChars":15,"textLines":1,"bbox":[92,104,1030,74]}
+{"kind":"shape","id":"sh/g7axwrmt","slide":3,"name":"content-top-rule","bbox":[92,210,1096,2]}
+{"kind":"textbox","id":"sh/72hwj25c","slide":3,"name":"content-row-01-number","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[92,232,70,36]}
+{"kind":"textbox","id":"sh/618fqh4r","slide":3,"name":"content-row-01-heading","text":"{{WORKFLOW_ONE}}","textPreview":"{{WORKFLOW_ONE}}","textChars":16,"textLines":1,"bbox":[186,232,370,62]}
+{"kind":"textbox","id":"sh/t4jelcni","slide":3,"name":"content-row-01-body","text":"{{OWNER_ONE}} owns {{DELIVERABLE_ONE}}.","textPreview":"{{OWNER_ONE}} owns {{DELIVERABLE_ONE}}.","textChars":39,"textLines":1,"bbox":[580,232,608,66]}
+{"kind":"shape","id":"sh/s3qxs7mx","slide":3,"name":"content-row-01-rule","bbox":[92,326,1096,1]}
+{"kind":"textbox","id":"sh/jyhwf25g","slide":3,"name":"content-row-02-number","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[92,360,70,36]}
+{"kind":"textbox","id":"sh/id8fmx4v","slide":3,"name":"content-row-02-heading","text":"{{WORKFLOW_TWO}}","textPreview":"{{WORKFLOW_TWO}}","textChars":16,"textLines":1,"bbox":[186,360,370,62]}
+{"kind":"textbox","id":"sh/4bqd4rid","slide":3,"name":"content-row-02-body","text":"{{OWNER_TWO}} owns {{DELIVERABLE_TWO}}.","textPreview":"{{OWNER_TWO}} owns {{DELIVERABLE_TWO}}.","textChars":39,"textLines":1,"bbox":[580,360,608,66]}
+{"kind":"shape","id":"sh/pczuxwzy","slide":3,"name":"content-row-02-rule","bbox":[92,454,1096,1]}
+{"kind":"textbox","id":"sh/29ov2h07","slide":3,"name":"content-row-03-number","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[92,488,70,36]}
+{"kind":"textbox","id":"sh/3axcvmhs","slide":3,"name":"content-row-03-heading","text":"{{WORKFLOW_THREE}}","textPreview":"{{WORKFLOW_THREE}}","textChars":18,"textLines":1,"bbox":[186,488,370,62]}
+{"kind":"textbox","id":"sh/gn6d07i1","slide":3,"name":"content-row-03-body","text":"{{OWNER_THREE}} owns {{DELIVERABLE_THREE}}.","textPreview":"{{OWNER_THREE}} owns {{DELIVERABLE_THREE}}.","textChars":43,"textLines":1,"bbox":[580,488,608,66]}
+{"kind":"shape","id":"sh/h8futczm","slide":3,"name":"content-row-03-rule","bbox":[92,582,1096,1]}
+{"kind":"textbox","id":"sh/ulovyh0b","slide":3,"name":"footer-wordmark-{{FOLIO}}","text":"MASLOW AI","textPreview":"MASLOW AI","textChars":9,"textLines":1,"bbox":[92,668,180,24]}
+{"kind":"textbox","id":"sh/fmxcr2hg","slide":3,"name":"footer-folio-{{FOLIO}}","text":"MASLOW AI · {{FOLIO}}","textPreview":"MASLOW AI · {{FOLIO}}","textChars":21,"textLines":1,"bbox":[1008,668,180,24]}
+{"kind":"notes","id":"nt/xe6jr7","slide":3,"text":"Layout 03 Content. Each row names the waiting workflow, responsible owner, and deliverable. Keep one communication job on the slide."}
+{"kind":"slide","id":"sl/sr60ny","slide":4,"title":"{{SECTION_NUMBER}} · EVIDENCE","textShapes":13}
+{"kind":"textbox","id":"sh/sb6h8vux","slide":4,"name":"evidence-eyebrow","text":"{{SECTION_NUMBER}} · EVIDENCE","textPreview":"{{SECTION_NUMBER}} · EVIDENCE","textChars":29,"textLines":1,"bbox":[92,64,700,28]}
+{"kind":"textbox","id":"sh/7axgzqtc","slide":4,"name":"evidence-heading","text":"{{SLIDE_TITLE}}","textPreview":"{{SLIDE_TITLE}}","textChars":15,"textLines":1,"bbox":[92,108,1030,74]}
+{"kind":"shape","id":"sh/69of6lc7","slide":4,"name":"evidence-ONE-rule","bbox":[92,236,330,1]}
+{"kind":"textbox","id":"sh/h0fy50bu","slide":4,"name":"evidence-ONE-value","text":"{{VALUE_1}}","textPreview":"{{VALUE_1}}","textChars":11,"textLines":1,"bbox":[92,272,330,88]}
+{"kind":"textbox","id":"sh/gz6hcvu9","slide":4,"name":"evidence-ONE-claim","text":"{{CLAIM_1}}","textPreview":"{{CLAIM_1}}","textChars":11,"textLines":1,"bbox":[92,382,330,84]}
+{"kind":"textbox","id":"sh/fexg3qto","slide":4,"name":"evidence-ONE-source","text":"{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}","textPreview":"{{EVIDENCE_STATUS_ONE}} · {{SOURCE_ONE}}","textChars":40,"textLines":1,"bbox":[92,500,330,48]}
+{"kind":"shape","id":"sh/udozalc3","slide":4,"name":"evidence-TWO-rule","bbox":[466,236,330,1]}
+{"kind":"textbox","id":"sh/p4zy90bq","slide":4,"name":"evidence-TWO-value","text":"{{VALUE_2}}","textPreview":"{{VALUE_2}}","textChars":11,"textLines":1,"bbox":[466,272,330,88]}
+{"kind":"textbox","id":"sh/43qhgfa5","slide":4,"name":"evidence-TWO-claim","text":"{{CLAIM_2}}","textPreview":"{{CLAIM_2}}","textChars":11,"textLines":1,"bbox":[466,382,330,84]}
+{"kind":"textbox","id":"sh/mh0nqpsj","slide":4,"name":"evidence-TWO-source","text":"{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}","textPreview":"{{EVIDENCE_STATUS_TWO}} · {{SOURCE_TWO}}","textChars":40,"textLines":1,"bbox":[466,500,330,48]}
+{"kind":"shape","id":"sh/7i9ozut4","slide":4,"name":"evidence-THREE-rule","bbox":[840,236,330,1]}
+{"kind":"textbox","id":"sh/8j2pszap","slide":4,"name":"evidence-THREE-value","text":"{{VALUE_3}}","textPreview":"{{VALUE_3}}","textChars":11,"textLines":1,"bbox":[840,272,330,88]}
+{"kind":"textbox","id":"sh/9kb614ba","slide":4,"name":"evidence-THREE-claim","text":"{{CLAIM_3}}","textPreview":"{{CLAIM_3}}","textChars":11,"textLines":1,"bbox":[840,382,330,84]}
+{"kind":"textbox","id":"sh/ulk7u9sv","slide":4,"name":"evidence-THREE-source","text":"{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}","textPreview":"{{EVIDENCE_STATUS_THREE}} · {{SOURCE_THREE}}","textChars":44,"textLines":1,"bbox":[840,500,330,48]}
+{"kind":"textbox","id":"sh/vmto3utg","slide":4,"name":"footer-wordmark-{{FOLIO}}","text":"MASLOW AI","textPreview":"MASLOW AI","textChars":9,"textLines":1,"bbox":[92,668,180,24]}
+{"kind":"textbox","id":"sh/gn2pwzal","slide":4,"name":"footer-folio-{{FOLIO}}","text":"MASLOW AI · {{FOLIO}}","textPreview":"MASLOW AI · {{FOLIO}}","textChars":21,"textLines":1,"bbox":[1008,668,180,24]}
+{"kind":"notes","id":"nt/sr60ny","slide":4,"text":"Layout 04 Evidence. Every claim requires production, modeled, illustrative, or in_preparation plus a source. Put longer provenance here in speaker notes."}
+{"kind":"slide","id":"sl/io074a","slide":5,"title":"“","textShapes":4}
+{"kind":"textbox","id":"sh/03qdcfel","slide":5,"name":"quote-mark","text":"“","textPreview":"“","textChars":1,"textLines":1,"bbox":[130,102,160,120]}
+{"kind":"textbox","id":"sh/z2hc3ax0","slide":5,"name":"quote-text","text":"{{VERIFIED_QUOTE}}","textPreview":"{{VERIFIED_QUOTE}}","textChars":18,"textLines":1,"bbox":[130,238,1000,210]}
+{"kind":"textbox","id":"sh/e1ova5wf","slide":5,"name":"quote-attribution","text":"{{ATTRIBUTION}}","textPreview":"{{ATTRIBUTION}}","textChars":15,"textLines":1,"bbox":[130,496,820,34]}
+{"kind":"textbox","id":"sh/d0fu10fu","slide":5,"name":"quote-source","text":"{{EVIDENCE_STATUS}} · {{SOURCE}}","textPreview":"{{EVIDENCE_STATUS}} · {{SOURCE}}","textChars":32,"textLines":1,"bbox":[130,542,820,32]}
+{"kind":"notes","id":"nt/io074a","slide":5,"text":"Layout 05 Quote. Do not release an unsourced quote. If the quote is an illustrative writing pattern, label it illustrative on the slide."}
+{"kind":"slide","id":"sl/ef3djb","slide":6,"title":"{{NEXT_ACTION_HEADLINE}}","textShapes":5}
+{"kind":"textbox","id":"sh/1czmxkf6","slide":6,"name":"closing-heading","text":"{{NEXT_ACTION_HEADLINE}}","textPreview":"{{NEXT_ACTION_HEADLINE}}","textChars":24,"textLines":1,"bbox":[92,224,1050,150]}
+{"kind":"shape","id":"sh/0bq5ofel","slide":6,"name":"closing-action","bbox":[92,424,420,72]}
+{"kind":"textbox","id":"sh/ne1ozaxc","slide":6,"name":"closing-action-label","text":"{{CTA_LABEL}}","textPreview":"{{CTA_LABEL}}","textChars":13,"textLines":1,"bbox":[120,446,350,28]}
+{"kind":"shape","id":"sh/mdsnq5wr","slide":6,"name":"closing-action-signal","bbox":[92,492,48,4]}
+{"kind":"textbox","id":"sh/9gj61kfi","slide":6,"name":"closing-contact","text":"{{CONTACT}}","textPreview":"{{CONTACT}}","textChars":11,"textLines":1,"bbox":[92,536,700,34]}
+{"kind":"textbox","id":"sh/ofa5sfex","slide":6,"name":"footer-wordmark-{{FOLIO}}","text":"MASLOW AI","textPreview":"MASLOW AI","textChars":9,"textLines":1,"bbox":[92,668,180,24]}
+{"kind":"textbox","id":"sh/3ix4nqxs","slide":6,"name":"footer-folio-{{FOLIO}}","text":"MASLOW AI · {{FOLIO}}","textPreview":"MASLOW AI · {{FOLIO}}","textChars":21,"textLines":1,"bbox":[1008,668,180,24]}
+{"kind":"image","id":"im/zal0zmt0","slide":6,"name":"","geometry":"rect","alt":"Maslow AI complete full-color logo","bbox":[92,62,280,45]}
+{"kind":"notes","id":"nt/ef3djb","slide":6,"text":"Layout 06 Closing. End on one explicit next action. The action is navy on white; pink remains a small signal."}

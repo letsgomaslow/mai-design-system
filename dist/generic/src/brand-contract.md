@@ -1,4 +1,4 @@
-# Maslow Brand Contract 1.0.0
+# Maslow Brand Contract 1.0.1
 
 Apply this contract to every Maslow website, presentation, document, PDF, campaign, and social asset.
 
@@ -12,7 +12,7 @@ Apply this contract to every Maslow website, presentation, document, PDF, campai
 3. Use square structural surfaces. Buttons, cards, panels, inputs, navigation controls, pills, and badges use zero radius.
 4. Preserve circles only for avatars, status dots, step markers, and small signals whose shape carries meaning.
 5. Use Manrope for general copy, DM Sans for selected display emphasis, and IBM Plex Mono for compact metadata.
-6. Use approved logo files unchanged. Preserve their viewBox, path geometry, colors, and clear space.
+6. Use the seven immutable designer-supplied PNG masters cataloged in `src/logo-assets.json`. Never redraw, recolor, trace, crop, trim, retype, re-encode, or approximate a logo gradient from tokens.
 7. Use flat white, off-white, or navy surfaces, hairline rules, generous spacing, and restrained accents.
 8. Keep animation optional, brief, and disabled by reduced-motion preferences.
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 from typing import Iterable
+import json
 
 from docx import Document
 from docx.enum.section import WD_SECTION
@@ -13,7 +14,8 @@ from docx.shared import Inches, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "artifacts" / "docx"
-LOGO = ROOT / "artifacts" / "generated" / "maslow-mark-ink.png"
+LOGO = ROOT / "assets" / "logos" / "maslow-complete-full-color.png"
+BRAND_VERSION = json.loads((ROOT / "package.json").read_text(encoding="utf-8"))["version"]
 
 NAVY = "192332"
 BAND = "121D35"
@@ -229,17 +231,17 @@ def add_header_footer(doc, doc_type):
     section.footer_distance = Inches(0.35)
     header = section.header
     table = header.add_table(rows=1, cols=2, width=Inches(6.9))
-    set_table_geometry(table, [1.1, 5.8])
+    set_table_geometry(table, [1.8, 5.1])
     set_table_borders(table, WHITE, 0)
     mark_header_row(table.rows[0])
     logo_p = table.cell(0, 0).paragraphs[0]
-    logo_p.add_run().add_picture(str(LOGO), width=Inches(0.48))
+    logo_p.add_run().add_picture(str(LOGO), width=Inches(1.6))
     title_p = table.cell(0, 1).paragraphs[0]
     title_p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     set_run(title_p.add_run(f"MASLOW AI · {doc_type}"), "IBM Plex Mono", 8, MUTED, True)
     footer_p = section.footer.paragraphs[0]
     footer_p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    set_run(footer_p.add_run("MASLOW BRAND OS 1.0.0 · "), "IBM Plex Mono", 8, MUTED)
+    set_run(footer_p.add_run(f"MASLOW BRAND OS {BRAND_VERSION} · "), "IBM Plex Mono", 8, MUTED)
     add_page_field(footer_p, "PAGE")
     set_run(footer_p.add_run(" / "), "IBM Plex Mono", 8, MUTED)
     add_page_field(footer_p, "NUMPAGES")
@@ -260,7 +262,7 @@ def base_document(title, subject, doc_type):
     props.title = title
     props.subject = subject
     props.author = "Maslow AI"
-    props.keywords = "Maslow Brand OS 1.0.0, editable template, unresolved variables"
+    props.keywords = f"Maslow Brand OS {BRAND_VERSION}, editable template, unresolved variables"
     update_fields = OxmlElement("w:updateFields")
     update_fields.set(qn("w:val"), "true")
     doc.settings._element.append(update_fields)
@@ -324,7 +326,7 @@ def build_proposal():
     shade_paragraph(action, NAVY)
     set_paragraph_border(action, "bottom", PINK, 18, 0)
     set_run(action.add_run("  {{CTA_LABEL}}  "), "Manrope", 10, WHITE, True)
-    set_picture_alt(doc, "Maslow AI mark")
+    set_picture_alt(doc, "Maslow AI complete full-color logo")
     doc.save(OUTPUT / "maslow-proposal-template.docx")
 
 
@@ -338,7 +340,7 @@ def build_memo():
     doc.add_paragraph("{{OWNER_AND_ACTION}}")
     doc.add_paragraph("Evidence", style="Heading 1")
     add_evidence_callout(doc, text="{{EVIDENCE_NOTE}}")
-    set_picture_alt(doc, "Maslow AI mark")
+    set_picture_alt(doc, "Maslow AI complete full-color logo")
     doc.save(OUTPUT / "maslow-memo-template.docx")
 
 
@@ -385,13 +387,13 @@ def build_invoice():
     doc.add_paragraph("{{PAYMENT_INSTRUCTIONS}}")
     contact = doc.add_paragraph()
     set_run(contact.add_run("{{CONTACT_LABEL}} >"), "Manrope", 9, LINK, True)
-    set_picture_alt(doc, "Maslow AI mark")
+    set_picture_alt(doc, "Maslow AI complete full-color logo")
     doc.save(OUTPUT / "maslow-invoice-template.docx")
 
 
 def main():
     if not LOGO.exists():
-        raise FileNotFoundError(f"Generate {LOGO} with scripts/build-social.mjs first")
+        raise FileNotFoundError(f"Approved designer logo is missing: {LOGO}")
     OUTPUT.mkdir(parents=True, exist_ok=True)
     build_proposal()
     build_memo()

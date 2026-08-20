@@ -5,6 +5,8 @@ description: Use when a legacy request mentions placing, sizing, selecting, expo
 
 # Legacy Maslow Logo Trigger
 
-**REQUIRED SUB-SKILL:** Use `maslow-brand-core` and approved files from the canonical assets directory.
+**REQUIRED SUB-SKILL:** Use `maslow-brand-core` first.
 
-Do not redraw, recolor, or duplicate logo specifications in this wrapper.
+Read `../../src/logo-assets.json`, select the matching complete-lockup or symbol entry, and use its `path` unchanged.
+
+The files in `../../assets/logos/` are immutable designer-supplied PNG masters. Do not redraw, recolor, trace, crop, trim, retype, convert, optimize, or re-encode them. Do not compose a Maslow wordmark from text or infer a gradient from sampled colors.

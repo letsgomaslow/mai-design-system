@@ -13,6 +13,7 @@ rmSync(out, { recursive: true, force: true });
 const pkg = readJson("package.json");
 const tokens = readJson("src/tokens.json");
 const policies = readJson("src/policies.json");
+const logoAssets = readJson("src/logo-assets.json");
 
 function read(path) {
   return readFileSync(join(root, path), "utf8");
@@ -66,7 +67,12 @@ function assetHashes() {
 }
 
 function sourceHashes() {
-  return Object.fromEntries(["src/tokens.json", "src/policies.json", "src/brand-contract.md"].map((path) => [path, sha(join(root, path))]));
+  return Object.fromEntries([
+    "src/tokens.json",
+    "src/policies.json",
+    "src/logo-assets.json",
+    "src/brand-contract.md",
+  ].map((path) => [path, sha(join(root, path))]));
 }
 
 function pluginManifest(adapter) {
@@ -143,6 +149,8 @@ const manifest = {
   packageName: pkg.name,
   version: pkg.version,
   contractVersion: tokens.version,
+  logoPolicy: logoAssets.policy,
+  logoAssets: logoAssets.variants,
   sourceHashes: sourceHashes(),
   assetHashes: assetHashes(),
 };
@@ -158,7 +166,7 @@ export interface MaslowColorTokens {
   navy: string; navyDeep: string; ink: string; text: string; muted: string; bodyMuted: string; meta: string; nearBlack: string;
   line: string; lineSoft: string; lineCard: string; offWhite: string; white: string; teal: string; tealText: string;
   purple: string; plum: string; gold: string; goldText: string; yellow: string; pink: string; coral: string;
-  gradientPink: string; gradientTeal: string; duotonePink: string; duotoneTeal: string; darkSurface: string;
+  duotonePink: string; duotoneTeal: string; darkSurface: string;
   darkSurfaceRaised: string; darkLine: string; darkText: string; statusOpen: string; statusClosed: string; success: string; error: string;
 }
 export interface MaslowActionTokens { primary: string; primaryInk: string; primaryHover: string; inverse: string; inverseInk: string; signal: string; link: string; linkHover: string; focus: string; }

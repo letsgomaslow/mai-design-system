@@ -3,8 +3,7 @@ export function SiteFooter({ offices = [], note = "" }) {
   return (
     <footer style={{background:"var(--maslow-dark-navy)",padding:"40px 48px",display:"flex",justifyContent:"space-between",alignItems:"center",fontFamily:"var(--font-primary)"}}>
       <span style={{display:"flex",alignItems:"center",gap:10}}>
-        <img src="assets/maslow-mark-white.svg" alt="Maslow" style={{width:30,height:19}} />
-        <span style={{font:"600 12px var(--font-primary)",letterSpacing:"2px",color:"var(--maslow-white)"}}>MASLOW</span>
+        <img src="assets/logos/maslow-complete-white.png" alt="Maslow AI" style={{width:160,height:"auto"}} />
       </span>
       <div style={{display:"flex",gap:32,alignItems:"center"}}>
         {offices.map(o => (

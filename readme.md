@@ -1,4 +1,4 @@
-# Maslow Brand OS 1.0.0
+# Maslow Brand OS 1.0.1
 
 Maslow Brand OS is the single source of truth for Maslow AI branding across websites, presentations, Word documents, PDFs, social campaigns, and agent-generated work. The canonical inputs live in `src/`. Everything else is a consumer, generated adapter, reusable component, preview, or artifact template.
 
@@ -6,6 +6,7 @@ Maslow Brand OS is the single source of truth for Maslow AI branding across webs
 
 - `src/tokens.json` is the only color, typography, radius, and layout token authority.
 - `src/policies.json` is the only messaging, evidence, and interaction policy authority.
+- `src/logo-assets.json` is the only logo variant, provenance, usage, dimension, and hash authority.
 - `src/brand-contract.md` is the compact mandatory contract for people and agents.
 - `skills/maslow-brand-core/SKILL.md` loads that contract. Focused task skills load the core before their own instructions.
 - `scripts/validate.mjs` checks draft or release output.
@@ -21,7 +22,8 @@ Do not copy values into a skill or invent a separate rule. Change canonical sour
 - Buttons, cards, panels, inputs, navigation controls, pills, and badges use 0px structural radius.
 - Circles remain only when shape carries meaning, including avatars, status dots, step markers, and small signals.
 - Manrope, DM Sans, and IBM Plex Mono are vendored in `assets/fonts/`.
-- Approved logo variants in `assets/` retain their original geometry and colors.
+- Seven designer-supplied logo masters live in `assets/logos/`. Their filenames are normalized for agents, but every PNG remains byte-identical to the designer handoff and is hash-locked in `src/logo-assets.json`.
+- Complete lockups are used when the Maslow AI name must be visible. Symbol-only masters are reserved for favicons, avatars, small identifiers, and deliberate decorative use.
 
 ## Position and evidence
 
@@ -56,4 +58,4 @@ Release mode must report zero blocking violations. Unresolved `{{VARIABLES}}` ar
 - `dist/chatgpt` as one self-contained skill folder.
 - `dist/generic` with the contract, schemas, templates, assets, and validation instructions.
 
-The root HTML specimen is now a Brand OS 1.0.0 landing page that points to the canonical contract, current template gallery, artifacts, and validator. The original standalone skill folders remain preserved outside this repository for compatibility, but their policy is superseded by `src/`.
+The root HTML specimen is now a Brand OS 1.0.1 landing page that points to the canonical contract, current template gallery, artifacts, and validator. The original standalone skill folders remain preserved outside this repository for compatibility, but their policy is superseded by `src/`.

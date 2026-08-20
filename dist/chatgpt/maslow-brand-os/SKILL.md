@@ -3,7 +3,7 @@ name: maslow-brand-os
 description: Use when creating or reviewing any Maslow AI branded website, presentation, document, PDF, campaign, social asset, image, or interface.
 ---
 
-# Maslow Brand OS 1.0.0
+# Maslow Brand OS 1.0.1
 
 Apply this compact contract before every task. Do not search for a different brand authority.
 
@@ -15,7 +15,7 @@ Apply this compact contract before every task. Do not search for a different bra
 - Pink #EE7BB3 is a small signal only, never a default element fill or readable text.
 - Structural radius: 0px. Circles are limited to avatars, status dots, step markers, and meaningful small signals.
 
-# Maslow Brand Contract 1.0.0
+# Maslow Brand Contract 1.0.1
 
 Apply this contract to every Maslow website, presentation, document, PDF, campaign, and social asset.
 
@@ -29,7 +29,7 @@ Apply this contract to every Maslow website, presentation, document, PDF, campai
 3. Use square structural surfaces. Buttons, cards, panels, inputs, navigation controls, pills, and badges use zero radius.
 4. Preserve circles only for avatars, status dots, step markers, and small signals whose shape carries meaning.
 5. Use Manrope for general copy, DM Sans for selected display emphasis, and IBM Plex Mono for compact metadata.
-6. Use approved logo files unchanged. Preserve their viewBox, path geometry, colors, and clear space.
+6. Use the seven immutable designer-supplied PNG masters cataloged in `src/logo-assets.json`. Never redraw, recolor, trace, crop, trim, retype, re-encode, or approximate a logo gradient from tokens.
 7. Use flat white, off-white, or navy surfaces, hairline rules, generous spacing, and restrained accents.
 8. Keep animation optional, brief, and disabled by reduced-motion preferences.
 
@@ -115,7 +115,7 @@ Use the existing website component patterns only after confirming they comply wi
 **REQUIRED SUB-SKILL:** Use `maslow-brand-core` first.
 
 1. Validate the artifact in draft mode and report warnings by rule, location, and repair.
-2. Confirm the approved logo hash, fonts, palette, action hierarchy, square structure, and accessibility behavior.
+2. Confirm every logo file matches a `src/logo-assets.json` hash and preserves the designer master canvas. Reject redrawn, recolored, traced, cropped, trimmed, retyped, converted, optimized, or re-encoded logos.
 3. Confirm the primary position, US English, direct copy, evidence labels, claim provenance, and resolved variables.
 4. Inspect the rendered output at its final size. Do not approve from source text alone.
 5. Run release mode. Approve only when the report has zero blocking violations.

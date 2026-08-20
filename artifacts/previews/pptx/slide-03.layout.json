@@ -2,12 +2,12 @@
   "schema": "openai.presentation.layout/v4",
   "unit": "px",
   "slide": {
-    "aid": "sl/okd63j",
-    "id": "okd63j",
+    "aid": "sl/xe6jr7",
+    "id": "xe6jr7",
     "slide": 3,
-    "layoutId": "a88f8170-7bb9-4fd6-b570-b1f623c88ac0",
+    "layoutId": "3df00db4-6088-49d6-83e4-681fa756b46a",
     "layoutName": "03 Content",
-    "masterLayoutId": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+    "masterLayoutId": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
     "masterLayoutName": "Maslow Brand Master",
     "backgroundColor": "#FFFFFF",
     "frame": {
@@ -18,7 +18,7 @@
     }
   },
   "theme": {
-    "colorSchemeName": "Maslow Brand OS 1.0.0",
+    "colorSchemeName": "Maslow Brand OS 1.0.1",
     "colors": {
       "accent1": "#192332",
       "accent2": "#73C1AE",
@@ -41,15 +41,15 @@
   "inheritedLayers": [
     {
       "scope": "layout",
-      "id": "a88f8170-7bb9-4fd6-b570-b1f623c88ac0",
+      "id": "3df00db4-6088-49d6-83e4-681fa756b46a",
       "name": "03 Content",
-      "parentLayoutId": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+      "parentLayoutId": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
       "elements": [
         {
           "order": 1,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/a88f8170-7bb9-4fd6-b570-b1f623c88ac0/1",
+          "aid": "template/layout/3df00db4-6088-49d6-83e4-681fa756b46a/1",
           "id": "1",
           "name": "03 Content background",
           "bbox": [
@@ -66,8 +66,8 @@
           "order": 2,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/a88f8170-7bb9-4fd6-b570-b1f623c88ac0/fa7dddc4-71fe-4a25-9ef9-ebb847b6a496",
-          "id": "fa7dddc4-71fe-4a25-9ef9-ebb847b6a496",
+          "aid": "template/layout/3df00db4-6088-49d6-83e4-681fa756b46a/7fb6bf40-8a86-4e87-8a4d-f35570455529",
+          "id": "7fb6bf40-8a86-4e87-8a4d-f35570455529",
           "name": "03 Content title 0",
           "bbox": [
             92,
@@ -94,8 +94,8 @@
           "order": 3,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/a88f8170-7bb9-4fd6-b570-b1f623c88ac0/166aca91-5605-4c20-95fc-e9007f49c23d",
-          "id": "166aca91-5605-4c20-95fc-e9007f49c23d",
+          "aid": "template/layout/3df00db4-6088-49d6-83e4-681fa756b46a/c2f1b5e4-e37d-4af7-aef9-5b55a4c902f0",
+          "id": "c2f1b5e4-e37d-4af7-aef9-5b55a4c902f0",
           "name": "03 Content body 0",
           "bbox": [
             92,
@@ -122,7 +122,7 @@
     },
     {
       "scope": "master",
-      "id": "d9465b7b-153e-4ed8-bcf7-62a88c295253",
+      "id": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
       "name": "Maslow Brand Master",
       "type": "master",
       "elements": []
@@ -133,7 +133,7 @@
       "order": 1,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9wz6lkj6",
+      "aid": "sh/u5sfuh43",
       "id": "1",
       "name": "content-eyebrow",
       "bbox": [
@@ -192,7 +192,7 @@
       "order": 2,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/mto7qpkv",
+      "aid": "sh/h8jepwne",
       "id": "2",
       "name": "content-heading",
       "bbox": [
@@ -251,7 +251,7 @@
       "order": 3,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/nuxoju1g",
+      "aid": "sh/g7axwrmt",
       "id": "3",
       "name": "content-top-rule",
       "bbox": [
@@ -268,7 +268,7 @@
       "order": 4,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/wzqpwz2x",
+      "aid": "sh/72hwj25c",
       "id": "4",
       "name": "content-row-01-number",
       "bbox": [
@@ -327,7 +327,7 @@
       "order": 5,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/x0z6p4ji",
+      "aid": "sh/618fqh4r",
       "id": "5",
       "name": "content-row-01-heading",
       "bbox": [
@@ -386,7 +386,7 @@
       "order": 6,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ax87upkr",
+      "aid": "sh/t4jelcni",
       "id": "6",
       "name": "content-row-01-body",
       "bbox": [
@@ -442,7 +442,7 @@
       "order": 7,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/byhonu1c",
+      "aid": "sh/s3qxs7mx",
       "id": "7",
       "name": "content-row-01-rule",
       "bbox": [
@@ -459,7 +459,7 @@
       "order": 8,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/c3m5kv2t",
+      "aid": "sh/jyhwf25g",
       "id": "8",
       "name": "content-row-02-number",
       "bbox": [
@@ -518,7 +518,7 @@
       "order": 9,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/d4v6d03y",
+      "aid": "sh/id8fmx4v",
       "id": "9",
       "name": "content-row-02-heading",
       "bbox": [
@@ -577,7 +577,7 @@
       "order": 10,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/lszedsz2",
+      "aid": "sh/4bqd4rid",
       "id": "10",
       "name": "content-row-02-body",
       "bbox": [
@@ -633,7 +633,7 @@
       "order": 11,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/krqx4nih",
+      "aid": "sh/pczuxwzy",
       "id": "11",
       "name": "content-row-02-rule",
       "bbox": [
@@ -650,7 +650,7 @@
       "order": 12,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/zqxwb2hw",
+      "aid": "sh/29ov2h07",
       "id": "12",
       "name": "content-row-03-number",
       "bbox": [
@@ -709,7 +709,7 @@
       "order": 13,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/y5of2x0r",
+      "aid": "sh/3axcvmhs",
       "id": "13",
       "name": "content-row-03-heading",
       "bbox": [
@@ -768,7 +768,7 @@
       "order": 14,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9wzehcze",
+      "aid": "sh/gn6d07i1",
       "id": "14",
       "name": "content-row-03-body",
       "bbox": [
@@ -824,7 +824,7 @@
       "order": 15,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/8vqx87it",
+      "aid": "sh/h8futczm",
       "id": "15",
       "name": "content-row-03-rule",
       "bbox": [
@@ -841,7 +841,7 @@
       "order": 16,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/7uhwf2h8",
+      "aid": "sh/ulovyh0b",
       "id": "16",
       "name": "footer-wordmark-{{FOLIO}}",
       "bbox": [
@@ -900,7 +900,7 @@
       "order": 17,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/mt8f6x0n",
+      "aid": "sh/fmxcr2hg",
       "id": "17",
       "name": "footer-folio-{{FOLIO}}",
       "bbox": [

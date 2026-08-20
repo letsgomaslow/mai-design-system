@@ -1,4 +1,4 @@
-/* Generated-compatible aliases for Maslow Brand OS 1.0.0. Canonical source: src/tokens.json */
+/* Generated-compatible aliases for Maslow Brand OS 1.0.1. Canonical source: src/tokens.json */
 :root {
   /* Brand */
   --maslow-dark-navy: #192332;
@@ -7,12 +7,10 @@
   --maslow-hot-pink: #EE7BB3;
   --maslow-accent-pink: var(--maslow-hot-pink); /* legacy name; signal only */
   --maslow-accent-teal: #73C1AE;
-  --maslow-alt-teal: #6DC4AD;
   --maslow-accent-orange: #EBA93D;
   --maslow-accent-purple: #A070A6;
   --maslow-label-purple: #654C8F;
   --maslow-bright-yellow: #FFF860;
-  --maslow-gradient-pink: #F377B3;
   /* Neutrals */
   --maslow-white: #FFFFFF;
   --maslow-off-white: #F6F7F9;
@@ -56,6 +54,5 @@
   --pillar-technology: var(--maslow-accent-teal);
   --pillar-design: var(--maslow-accent-orange);
   /* Gradients */
-  --gradient-logo: linear-gradient(90deg, #F377B3 0%, #6DC4AD 100%); /* @kind color */
   --gradient-card-teal-pink: linear-gradient(180deg, #86E8CE 0%, #E686B5 100%); /* @kind color */
 }

@@ -50,7 +50,7 @@ PPTX_VALUES = {
     "NEXT_ACTION_HEADLINE": "Bring one waiting workflow",
     "CTA_LABEL": "BOOK A WORKING SESSION",
     "CONTACT": "MASLOW.AI",
-    "FOLIO": "1.0.0",
+    "FOLIO": "1.0.1",
 }
 
 DOCX_VALUES = {

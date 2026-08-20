@@ -1,6 +1,8 @@
 import { readFileSync } from "node:fs";
 
 const tokens = JSON.parse(readFileSync(new URL("../../src/tokens.json", import.meta.url), "utf8"));
+const logoAssets = JSON.parse(readFileSync(new URL("../../src/logo-assets.json", import.meta.url), "utf8"));
+const approvedLogoPaths = new Set(logoAssets.variants.map(({ path }) => path.toLowerCase()));
 const approvedColors = new Set(
   Object.values(tokens).flatMap((group) =>
     typeof group === "object" ? Object.values(group).filter((value) => /^#[0-9a-f]{6}$/i.test(value)) : [],
@@ -65,7 +67,7 @@ const rules = [
   },
   {
     ruleId: "asset.unapproved-logo",
-    message: "Use an approved Maslow logo asset without redrawing or renaming it.",
+    message: "Use an immutable designer-supplied Maslow logo asset without redrawing, recoloring, tracing, cropping, or re-encoding it.",
     matches: hasUnapprovedLogo,
   },
 ];
@@ -141,7 +143,13 @@ function hasUnapprovedColor(source) {
 function hasUnapprovedLogo(source) {
   const references = [...source.matchAll(/(?:src|href)=["']([^"']*(?:maslow|logo)[^"']*)["']/gi)]
     .map((match) => match[1]);
-  return references.some((reference) => !/maslow-mark-(?:gradient|ink|white|cream|ice)\.svg(?:[?#].*)?$/i.test(reference));
+  return references.some((reference) => {
+    const normalized = decodeURIComponent(reference)
+      .split(/[?#]/, 1)[0]
+      .replaceAll("\\", "/")
+      .toLowerCase();
+    return ![...approvedLogoPaths].some((path) => normalized.endsWith(path));
+  });
 }
 
 function hasUnlabeledClaim(source) {

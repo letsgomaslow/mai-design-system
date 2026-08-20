@@ -25,7 +25,7 @@
 </head>
 <body>
   <a href="#auditor" style="position:absolute;left:-9999px">Skip to validator</a>
-  <header><div class="eyebrow">MASLOW BRAND OS · 1.0.0</div><h1>Brand release validator</h1><p>Paste HTML or public copy for a fast draft check. Native PPTX, DOCX, and PDF release checks run through the repository command so file structure and export defects can also be inspected.</p></header>
+  <header><div class="eyebrow">MASLOW BRAND OS · 1.0.1</div><h1>Brand release validator</h1><p>Paste HTML or public copy for a fast draft check. Native PPTX, DOCX, and PDF release checks run through the repository command so file structure and export defects can also be inspected.</p></header>
   <main id="auditor">
     <section class="panel">
       <div class="field"><label for="mode">Validation mode</label><select id="mode"><option value="draft">Draft</option><option value="release">Release</option></select></div>
@@ -44,7 +44,7 @@
       ["visual.pink-fill","Pink may appear only as a small signal, not an element fill.",s=>/\.(?![^\{]*(?:signal|underline))[^\{]+\{[^}]*background(?:-color)?\s*:\s*#(?:ee7bb3|da85b2)/i.test(s)],
       ["visual.structural-radius","Use zero radius for structural controls and surfaces.",s=>/(?:button|card|panel|input|nav|badge|pill)[^\{]*\{[^}]*border-radius\s*:\s*(?!0(?:px)?\b)\d/i.test(s)],
       ["visual.unsupported-font","Use Manrope, DM Sans, or IBM Plex Mono.",s=>/font-family\s*:[^;}]*\b(?:Inter|Roboto|Arial|Helvetica)\b/i.test(s)],
-      ["asset.unapproved-logo","Use an approved Maslow logo asset without redrawing it.",s=>/<(?:svg|img)[^>]*(?:logo|maslow)[^>]*>/i.test(s)&&!/maslow-mark-(?:gradient|ink|white|cream|ice)\.svg/i.test(s)]
+      ["asset.unapproved-logo","Use an immutable designer-supplied Maslow logo asset without redrawing, recoloring, cropping, or re-encoding it.",s=>/<(?:svg|img)[^>]*(?:logo|maslow)[^>]*>/i.test(s)&&!/assets\/logos\/maslow-(?:complete-(?:black|full-color|white)|symbol-(?:black|full-color|webflow-full-color|white))\.png/i.test(s)]
     ];
     function visible(source){return source.replace(/<style[\s\S]*?<\/style>/gi," ").replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<[^>]+>/g," ")}
     function validate(){const source=document.getElementById("source").value;const mode=document.getElementById("mode").value;const violations=rules.filter(r=>r[2](source));const release=mode==="release";document.getElementById("count").textContent=violations.length;const status=document.getElementById("status");status.className=violations.length&&release?"block":"pass";status.textContent=violations.length?(release?"Release blocked":"Draft warnings"):"No violations found";document.getElementById("results").innerHTML=violations.length?violations.map(([id,message])=>`<div class="result"><strong>${id} · ${release?"ERROR":"WARNING"}</strong><p>${message}</p></div>`).join(""):'<p class="pass">The pasted source passed this fast check.</p>'}

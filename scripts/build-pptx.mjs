@@ -6,7 +6,6 @@ import { fileURLToPath } from "node:url";
 
 const require = createRequire(import.meta.url);
 const { Presentation, PresentationFile } = require("@oai/artifact-tool");
-const sharp = require("sharp");
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputDir = join(root, "artifacts/pptx");
 const previewDir = join(root, "artifacts/previews/pptx");
@@ -57,10 +56,9 @@ function addRect(slide, name, position, fill, lineFill = "none", lineWidth = 0) 
   });
 }
 
-async function logoPngBytes(path) {
+async function logoBytes(path) {
   const bytes = await fs.readFile(path);
-  const png = await sharp(bytes).resize({ width: 748 }).png().toBuffer();
-  return png.buffer.slice(png.byteOffset, png.byteOffset + png.byteLength);
+  return bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength);
 }
 
 function setNotes(slide, text) {
@@ -84,7 +82,7 @@ function addFooter(slide, ink, folio) {
   });
 }
 
-function addLogo(slide, bytes, alt, dark = false) {
+function addLogo(slide, bytes, alt) {
   slide.images.add({
     blob: bytes,
     contentType: "image/png",
@@ -92,14 +90,7 @@ function addLogo(slide, bytes, alt, dark = false) {
     fit: "contain",
     geometry: "rect",
     borderRadius: 0,
-    position: { left: 92, top: 58, width: 92, height: 62 },
-  });
-  addText(slide, `logo-label-${dark ? "dark" : "light"}`, "MASLOW AI", { left: 198, top: 74, width: 170, height: 26 }, {
-    fontFamily: MONO,
-    fontSize: 12,
-    bold: true,
-    color: dark ? C.white : C.navy,
-    letterSpacing: 2,
+    position: { left: 92, top: 62, width: 280, height: 45 },
   });
 }
 
@@ -156,13 +147,14 @@ function createLayouts(presentation, master) {
 async function build() {
   await fs.mkdir(outputDir, { recursive: true });
   await fs.mkdir(previewDir, { recursive: true });
-  const [whiteLogo, inkLogo] = await Promise.all([
-    logoPngBytes(join(root, "assets/maslow-mark-white.svg")),
-    logoPngBytes(join(root, "assets/maslow-mark-ink.svg")),
+  const brandVersion = JSON.parse(await fs.readFile(join(root, "package.json"), "utf8")).version;
+  const [whiteLogo, fullColorLogo] = await Promise.all([
+    logoBytes(join(root, "assets/logos/maslow-complete-white.png")),
+    logoBytes(join(root, "assets/logos/maslow-complete-full-color.png")),
   ]);
   const presentation = Presentation.create({ slideSize });
   presentation.theme.colorScheme = {
-    name: "Maslow Brand OS 1.0.0",
+    name: `Maslow Brand OS ${brandVersion}`,
     themeColors: {
       accent1: C.navy, accent2: C.teal, accent3: C.purple, accent4: C.orange,
       accent5: C.pink, accent6: C.yellow, bg1: C.white, bg2: C.offWhite,
@@ -175,7 +167,7 @@ async function build() {
 
   const slide1 = presentation.slides.add();
   slide1.setLayout(layouts.title); slide1.background.fill = C.band;
-  addLogo(slide1, whiteLogo, "Maslow AI mark in white", true);
+  addLogo(slide1, whiteLogo, "Maslow AI complete white logo");
   addText(slide1, "title-eyebrow", "{{DATE}} · {{AUDIENCE}}", { left: 92, top: 238, width: 700, height: 30 }, { fontFamily: MONO, fontSize: 15, bold: true, color: C.teal, letterSpacing: 3 });
   addText(slide1, "title-heading", "AI employees for the work that waits", { left: 92, top: 286, width: 1040, height: 196 }, { fontSize: 58, bold: true, color: C.white });
   addText(slide1, "title-subtitle", "{{PRESENTER}} · {{ENGAGEMENT}}", { left: 92, top: 520, width: 840, height: 44 }, { fontSize: 20, color: C.darkText });
@@ -238,7 +230,7 @@ async function build() {
 
   const slide6 = presentation.slides.add();
   slide6.setLayout(layouts.closing); slide6.background.fill = C.white;
-  addLogo(slide6, inkLogo, "Maslow AI mark in navy", false);
+  addLogo(slide6, fullColorLogo, "Maslow AI complete full-color logo");
   addText(slide6, "closing-heading", "{{NEXT_ACTION_HEADLINE}}", { left: 92, top: 224, width: 1050, height: 150 }, { fontSize: 52, bold: true, color: C.navy });
   addRect(slide6, "closing-action", { left: 92, top: 424, width: 420, height: 72 }, C.navy);
   addText(slide6, "closing-action-label", "{{CTA_LABEL}}", { left: 120, top: 446, width: 350, height: 28 }, { fontSize: 16, bold: true, color: C.white, letterSpacing: 2 });

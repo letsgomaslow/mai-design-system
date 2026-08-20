@@ -1,6 +1,6 @@
 ---
 name: Maslow Brand OS
-version: 1.0.0
+version: 1.0.1
 canonical-tokens: src/tokens.json
 canonical-policies: src/policies.json
 canonical-contract: src/brand-contract.md
@@ -25,7 +25,7 @@ Primary external position: "AI employees for the work that waits on your busiest
 - Structural radius is 0px for buttons, cards, panels, inputs, navigation controls, pills, and badges.
 - Circles are reserved for avatars, status dots, step markers, and small signals whose shape carries meaning.
 - Hierarchy comes from flat white, off-white, and navy surfaces, hairline rules, spacing, and typography.
-- Gradient use is limited to approved logo artwork and restrained image treatment. Never use a gradient as an interface background or text fill.
+- Logo color comes only from the supplied artwork. Never recreate or approximate its gradient from palette tokens. Other gradients are limited to restrained image treatment and never used as an interface background or text fill.
 
 ## Typography
 
@@ -75,7 +75,8 @@ One clear primary action should appear early in the experience. Secondary action
 - Use generous section spacing and 1px rules for structure.
 - Use restrained editorial photography with useful human or workflow context.
 - Avoid generic AI imagery, glowing brains, robots, dashboards without purpose, decorative stock photography, and visual claims that imply unverified outcomes.
-- Use logo files from `assets/` unchanged. Preserve viewBox, aspect ratio, color, and clear space.
+- Use only the immutable designer masters cataloged in `src/logo-assets.json` and stored in `assets/logos/`. Preserve every file byte, aspect ratio, transparent canvas, and internal spacing.
+- Never redraw, recolor, trace, crop, trim, retype, or re-encode a logo. Use a complete lockup when the Maslow AI name must be visible and a symbol-only master for favicons, avatars, or decorative identifiers.
 
 ## Messaging and evidence
 

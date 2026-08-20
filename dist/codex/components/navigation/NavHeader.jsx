@@ -2,11 +2,8 @@ import React from "react";
 export function NavHeader({ links = [], active, logoHref = "/" }) {
   return (
     <nav aria-label="Main" style={{height:83,display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 48px",background:"var(--surface-page)",borderBottom:"1px solid var(--maslow-nav-border)",fontFamily:"var(--font-primary)"}}>
-      <a href={logoHref} style={{display:"flex",alignItems:"center",gap:10,textDecoration:"none"}}>
-        <img src="assets/maslow-mark-gradient.svg" alt="Maslow AI" style={{width:36,height:23}} />
-        <span style={{font:"600 13px var(--font-primary)",letterSpacing:"2px",color:"var(--maslow-dark-navy)"}}>MASLOW</span>
-        <span style={{color:"var(--maslow-meta-grey)"}}>|</span>
-        <span style={{font:"500 10px var(--font-mono)",letterSpacing:"3px",color:"var(--maslow-dark-navy)"}}>AI</span>
+      <a href={logoHref} style={{display:"flex",alignItems:"center",textDecoration:"none"}}>
+        <img src="assets/logos/maslow-complete-full-color.png" alt="Maslow AI" style={{width:192,height:"auto"}} />
       </a>
       <div style={{display:"flex",gap:32}}>
         {links.map(l => (
