@@ -189,8 +189,9 @@ write("claude/.claude-plugin/plugin.json", pluginManifest("claude"));
 
 copyShared("agent-plugin", { portableRoot: true });
 copyShared("hermes", { portableRoot: true });
+["plugin.yaml", "__init__.py"].forEach((path) => copy(path, `hermes/${path}`));
 copyShared("openclaw", { portableRoot: true });
-write("hermes/HARNESS.md", "# Hermes\n\nInstall this directory as a portable Agent Plugin. Run `hermes plugins doctor . --ci`, enable the plugin, then load the namespaced focused skill that matches the task.\n");
+write("hermes/HARNESS.md", "# Hermes\n\nInstall this directory as a native Hermes plugin with `hermes plugins install <repo-or-folder> --enable`, then load the namespaced focused skill that matches the task.\n");
 write("openclaw/HARNESS.md", "# OpenClaw\n\nInstall this directory with `openclaw skills install . --as maslow-brand-os`, then run `openclaw skills info maslow-brand-os` and `openclaw skills check`. The root `SKILL.md` routes to the focused guidance.\n");
 
 write("chatgpt/maslow-brand-os/SKILL.md", chatGptSkill());
