@@ -94,7 +94,10 @@ function pluginManifest(adapter) {
   }, null, 2) + "\n";
 }
 
-function copyShared(destination) {
+function copyShared(destination, { portableRoot = false } = {}) {
+  if (portableRoot) {
+    ["plugin.json", "SKILL.md", "INSTALL.md"].forEach((path) => copy(path, `${destination}/${path}`));
+  }
   ["skills", "src", "assets", "scripts", "templates", "components"].forEach((path) => copy(path, `${destination}/${path}`));
   copyArtifactStarters(destination);
 }
@@ -131,7 +134,7 @@ Apply this compact contract before every task. Do not search for a different bra
 - Inverse action: ${tokens.action.inverse} with ${tokens.action.inverseInk} text on dark surfaces.
 - Link: ${tokens.action.link}; hover: ${tokens.action.linkHover}; focus: ${tokens.action.focus}.
 - Pink ${tokens.action.signal} is a small signal only, never a default element fill or readable text.
-- Structural radius: ${tokens.radius.structural}. Circles are limited to avatars, status dots, step markers, and meaningful small signals.
+- Structural radius: ${tokens.radius.structural}. Non-interactive taxonomy labels use ${tokens.radius.capsule}. Circles are limited to avatars, status dots, step markers, and meaningful small signals.
 
 ${read("src/brand-contract.md")}
 
@@ -170,7 +173,7 @@ export interface MaslowColorTokens {
   darkSurfaceRaised: string; darkLine: string; darkText: string; statusOpen: string; statusClosed: string; success: string; error: string;
 }
 export interface MaslowActionTokens { primary: string; primaryInk: string; primaryHover: string; inverse: string; inverseInk: string; signal: string; link: string; linkHover: string; focus: string; }
-export interface MaslowTokens { version: string; color: Readonly<MaslowColorTokens>; action: Readonly<MaslowActionTokens>; font: Readonly<{ sans: string; display: string; mono: string }>; radius: Readonly<{ structural: string; circle: string }>; layout: Readonly<{ canvasMax: string; contentMax: string; sectionGap: string; cardGap: string }>; }
+export interface MaslowTokens { version: string; color: Readonly<MaslowColorTokens>; action: Readonly<MaslowActionTokens>; font: Readonly<{ sans: string; display: string; mono: string }>; radius: Readonly<{ structural: string; capsule: string; circle: string }>; layout: Readonly<{ canvasMax: string; contentMax: string; sectionGap: string; cardGap: string }>; }
 export declare const brandVersion: string;
 export declare const evidenceStatuses: readonly EvidenceStatus[];
 export declare const tokens: Readonly<MaslowTokens>;
@@ -183,6 +186,12 @@ copyShared("codex");
 copyShared("claude");
 write("codex/.codex-plugin/plugin.json", pluginManifest("codex"));
 write("claude/.claude-plugin/plugin.json", pluginManifest("claude"));
+
+copyShared("agent-plugin", { portableRoot: true });
+copyShared("hermes", { portableRoot: true });
+copyShared("openclaw", { portableRoot: true });
+write("hermes/HARNESS.md", "# Hermes\n\nInstall this directory as a portable Agent Plugin. Run `hermes plugins doctor . --ci`, enable the plugin, then load the namespaced focused skill that matches the task.\n");
+write("openclaw/HARNESS.md", "# OpenClaw\n\nInstall this directory with `openclaw skills install . --as maslow-brand-os`, then run `openclaw skills info maslow-brand-os` and `openclaw skills check`. The root `SKILL.md` routes to the focused guidance.\n");
 
 write("chatgpt/maslow-brand-os/SKILL.md", chatGptSkill());
 ["src", "assets", "templates", "scripts"].forEach((path) => copy(path, `chatgpt/maslow-brand-os/${path}`));
@@ -198,5 +207,8 @@ copy("assets", "generic/assets");
 copy("templates", "generic/templates");
 copyArtifactStarters("generic");
 copy("scripts", "generic/scripts");
+copy("plugin.json", "generic/plugin.json");
+copy("SKILL.md", "generic/SKILL.md");
+copy("INSTALL.md", "generic/INSTALL.md");
 
 console.log(`Built ${pkg.name} ${pkg.version} at ${out}`);

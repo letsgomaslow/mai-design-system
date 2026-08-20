@@ -104,6 +104,9 @@ test("canonical contract exposes the approved action, shape, and evidence semant
     focus: "#401877",
   });
   assert.equal(tokens.radius.structural, "0px");
+  assert.equal(tokens.radius.capsule, "9999px");
+  assert.equal(policies.interaction.taxonomyCapsule.element, "span");
+  assert.equal(policies.interaction.taxonomyCapsule.interactive, false);
   assert.deepEqual(policies.evidence.statuses, [
     "production",
     "modeled",
@@ -124,6 +127,19 @@ test("release validation accepts a compliant artifact", () => {
   const report = JSON.parse(result.stdout);
   assert.equal(report.blocking, false);
   assert.equal(report.violations.length, 0);
+});
+
+test("release validation blocks rounded taxonomy labels with interactive semantics", () => {
+  const result = run("scripts/validate.mjs", [
+    "--mode",
+    "release",
+    "--input",
+    "fixtures/release-invalid-interactive-capsule.html",
+  ]);
+  assert.equal(result.status, 1, result.stderr || result.stdout);
+  const report = JSON.parse(result.stdout);
+  const ids = new Set(report.violations.map(({ ruleId }) => ruleId));
+  assert.equal(ids.has("visual.interactive-capsule"), true);
 });
 
 test("release validation accepts an exact designer-approved logo asset", () => {
@@ -199,6 +215,14 @@ test("build emits deterministic package exports and platform adapters", () => {
     "npm/manifest.json",
     "codex/.codex-plugin/plugin.json",
     "claude/.claude-plugin/plugin.json",
+    "agent-plugin/plugin.json",
+    "agent-plugin/SKILL.md",
+    "agent-plugin/skills/maslow-brand-core/SKILL.md",
+    "agent-plugin/scripts/doctor.mjs",
+    "hermes/plugin.json",
+    "hermes/skills/maslow-brand-core/SKILL.md",
+    "openclaw/SKILL.md",
+    "openclaw/src/brand-contract.md",
     "chatgpt/maslow-brand-os/SKILL.md",
     "chatgpt/maslow-brand-os/src/tokens.json",
     "generic/brand-contract.md",
@@ -211,9 +235,53 @@ test("build emits deterministic package exports and platform adapters", () => {
   });
 
   const manifest = JSON.parse(readFileSync(join(out, "npm/manifest.json"), "utf8"));
-  assert.equal(manifest.version, "1.0.1");
+  assert.equal(manifest.version, "1.1.0");
   assert.equal(manifest.packageName, "@maslow-ai/brand-os");
   assert.equal(Object.keys(manifest.assetHashes).length >= 5, true);
+
+  const plugin = JSON.parse(readFileSync(join(out, "agent-plugin/plugin.json"), "utf8"));
+  assert.equal(plugin.$schema, "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json");
+  assert.equal(plugin.version, "1.1.0");
+  assert.deepEqual(Object.keys(plugin).sort(), [
+    "$schema",
+    "author",
+    "description",
+    "keywords",
+    "license",
+    "name",
+    "repository",
+    "version",
+  ]);
+  assert.equal(existsSync(join(out, "codex/plugin.json")), false);
+  assert.equal(existsSync(join(out, "claude/plugin.json")), false);
+});
+
+test("portable plugin source exposes a standards-compliant manifest and root fallback skill", () => {
+  const plugin = JSON.parse(readFileSync(resolve(root, "plugin.json"), "utf8"));
+  assert.equal(plugin.$schema, "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json");
+  assert.equal(plugin.name, "maslow-brand-os");
+  assert.equal(plugin.version, "1.1.0");
+  const rootSkill = readFileSync(resolve(root, "SKILL.md"), "utf8");
+  assert.match(rootSkill, /^---\nname: maslow-brand-os\ndescription: Use when/m);
+  assert.match(rootSkill, /src\/brand-contract\.md/);
+  assert.match(rootSkill, /only the focused skill/i);
+});
+
+test("portable, Hermes, and OpenClaw packages pass their bundled doctor in isolation", () => {
+  const out = mkdtempSync(join(tmpdir(), "maslow-brand-os-doctor-"));
+  const result = run("scripts/build.mjs", ["--out", out]);
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+
+  for (const adapter of ["agent-plugin", "hermes", "openclaw"]) {
+    const doctor = spawnSync(process.execPath, [join(out, adapter, "scripts/doctor.mjs")], {
+      cwd: join(out, adapter),
+      encoding: "utf8",
+    });
+    assert.equal(doctor.status, 0, doctor.stderr || doctor.stdout);
+    const report = JSON.parse(doctor.stdout);
+    assert.equal(report.valid, true);
+    assert.equal(report.version, "1.1.0");
+  }
 });
 
 test("package manifest publishes every immutable designer logo with explicit usage metadata", () => {
@@ -284,22 +352,23 @@ test("human guidance and CSS aliases agree with the canonical contract", () => {
   assert.match(guidance, /navy[^\n]+primary action/i);
   assert.match(guidance, /pink[^\n]+signal/i);
   assert.match(guidance, /zero(?:-| )radius|0px structural/i);
+  assert.match(guidance, /non-interactive taxonomy/i);
   assert.doesNotMatch(guidance, /pink (?:primary|button)|pink means click|one (?:deliberate )?pink action/i);
   assert.doesNotMatch(guidance, /teal (?:outline|focus)|focus[^\n]+#73C1AE/i);
   assert.match(colors, /--action-button:\s*var\(--maslow-dark-navy\)/);
   assert.match(colors, /--action-link:\s*#9D4B8E/);
   assert.match(colors, /--focus-ring:\s*#401877/);
   assert.match(spacing, /--radius-structural:\s*0px/);
+  assert.match(spacing, /--radius-capsule:\s*9999px/);
 });
 
-test("component primitives use square structure and the approved action hierarchy", () => {
+test("component primitives distinguish square actions from taxonomy capsules", () => {
   const button = readFileSync(resolve(root, "components/actions/CTAButton.jsx"), "utf8");
   const link = readFileSync(resolve(root, "components/actions/CTALink.jsx"), "utf8");
+  const capsule = readFileSync(resolve(root, "components/badges/TaxonomyCapsule.jsx"), "utf8");
   const structural = [
     "components/actions/CTAButton.jsx",
-    "components/badges/PillBadge.jsx",
     "components/badges/StatusBadge.jsx",
-    "components/cards/CaseStudyCard.jsx",
   ].map((path) => readFileSync(resolve(root, path), "utf8"))
     .join("\n")
     .replace(/<span style=\{\{width:6,height:6,borderRadius:"50%"[^>]+\/>/g, "");
@@ -309,11 +378,14 @@ test("component primitives use square structure and the approved action hierarch
   assert.match(button, /borderRadius:0/);
   assert.match(link, /var\(--action-link\)/);
   assert.doesNotMatch(structural, /borderRadius:(?:[1-9]\d*|"(?:[1-9]\d*px|50%|9999px)")/);
+  assert.match(capsule, /data-taxonomy-label/);
+  assert.match(capsule, /var\(--radius-capsule\)/);
+  assert.doesNotMatch(capsule, /onClick|href=|role=|tabIndex=/);
 });
 
 test("package declares the public Brand OS exports", () => {
   const pkg = JSON.parse(readFileSync(resolve(root, "package.json"), "utf8"));
-  assert.equal(pkg.version, "1.0.1");
+  assert.equal(pkg.version, "1.1.0");
   assert.deepEqual(Object.keys(pkg.exports).sort(), [
     "./assets/*",
     "./manifest",

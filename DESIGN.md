@@ -1,6 +1,6 @@
 ---
 name: Maslow Brand OS
-version: 1.0.1
+version: 1.1.0
 canonical-tokens: src/tokens.json
 canonical-policies: src/policies.json
 canonical-contract: src/brand-contract.md
@@ -22,7 +22,8 @@ Primary external position: "AI employees for the work that waits on your busiest
 - White is the inverse primary action on navy surfaces, with navy text.
 - Pink `#EE7BB3` is a scarce signal. Use it for a small underline, dot, or exceptional emphasis, never a default button, card, badge, panel, or input fill.
 - Links use accessible purple. Focus uses the darker accessible purple token.
-- Structural radius is 0px for buttons, cards, panels, inputs, navigation controls, pills, and badges.
+- Structural radius is 0px for buttons, action links, cards, panels, inputs, navigation controls, interactive filters, interactive chips, and interactive badges.
+- Non-interactive taxonomy and content-classification labels use `--radius-capsule`. They are text spans, not links, buttons, filters, or focus targets.
 - Circles are reserved for avatars, status dots, step markers, and small signals whose shape carries meaning.
 - Hierarchy comes from flat white, off-white, and navy surfaces, hairline rules, spacing, and typography.
 - Logo color comes only from the supplied artwork. Never recreate or approximate its gradient from palette tokens. Other gradients are limited to restrained image treatment and never used as an interface background or text fill.
@@ -62,8 +63,13 @@ Primary external position: "AI employees for the work that waits on your busiest
 .card,
 .panel,
 .input,
-.badge {
+.interactive-badge {
   border-radius: 0;
+}
+
+[data-taxonomy-label] {
+  border-radius: var(--radius-capsule);
+  cursor: auto;
 }
 ```
 
@@ -101,6 +107,6 @@ Public work must:
 
 ## Validation
 
-Draft mode warns while allowing iteration. Release mode blocks unresolved variables, unapproved colors or logos, pink structural fills, rounded structural surfaces, inaccessible contrast, unsupported fonts, unlabeled claims, unverified metrics, and export defects.
+Draft mode warns while allowing iteration. Release mode blocks unresolved variables, unapproved colors or logos, pink structural fills, rounded structural surfaces, interactive capsules, inaccessible contrast, unsupported fonts, unlabeled claims, unverified metrics, and export defects.
 
 Run `npm test`, `npm run build`, and release validation before distributing work.

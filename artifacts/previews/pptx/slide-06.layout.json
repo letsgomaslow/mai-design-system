@@ -2,12 +2,12 @@
   "schema": "openai.presentation.layout/v4",
   "unit": "px",
   "slide": {
-    "aid": "sl/ef3djb",
-    "id": "ef3djb",
+    "aid": "sl/ktrxkv",
+    "id": "ktrxkv",
     "slide": 6,
-    "layoutId": "1bdd8fba-9667-4959-9b18-a9f1f5806ca0",
+    "layoutId": "3ab6c553-9d0a-4ed6-b144-74f7f985829f",
     "layoutName": "06 Closing",
-    "masterLayoutId": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+    "masterLayoutId": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
     "masterLayoutName": "Maslow Brand Master",
     "backgroundColor": "#FFFFFF",
     "frame": {
@@ -18,7 +18,7 @@
     }
   },
   "theme": {
-    "colorSchemeName": "Maslow Brand OS 1.0.1",
+    "colorSchemeName": "Maslow Brand OS 1.1.0",
     "colors": {
       "accent1": "#192332",
       "accent2": "#73C1AE",
@@ -41,15 +41,15 @@
   "inheritedLayers": [
     {
       "scope": "layout",
-      "id": "1bdd8fba-9667-4959-9b18-a9f1f5806ca0",
+      "id": "3ab6c553-9d0a-4ed6-b144-74f7f985829f",
       "name": "06 Closing",
-      "parentLayoutId": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+      "parentLayoutId": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
       "elements": [
         {
           "order": 1,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/1bdd8fba-9667-4959-9b18-a9f1f5806ca0/1",
+          "aid": "template/layout/3ab6c553-9d0a-4ed6-b144-74f7f985829f/1",
           "id": "1",
           "name": "06 Closing background",
           "bbox": [
@@ -66,8 +66,8 @@
           "order": 2,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/1bdd8fba-9667-4959-9b18-a9f1f5806ca0/8ecf80c9-e7b4-4c24-84ab-d63165351667",
-          "id": "8ecf80c9-e7b4-4c24-84ab-d63165351667",
+          "aid": "template/layout/3ab6c553-9d0a-4ed6-b144-74f7f985829f/bcf08204-679e-4f3f-abfa-b2f8f24d3609",
+          "id": "bcf08204-679e-4f3f-abfa-b2f8f24d3609",
           "name": "06 Closing title 0",
           "bbox": [
             92,
@@ -94,8 +94,8 @@
           "order": 3,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/1bdd8fba-9667-4959-9b18-a9f1f5806ca0/4db46d2c-7089-4f18-9f6f-be6ad52b206a",
-          "id": "4db46d2c-7089-4f18-9f6f-be6ad52b206a",
+          "aid": "template/layout/3ab6c553-9d0a-4ed6-b144-74f7f985829f/927496c8-5321-48a3-bd9c-56b7a7a1f1f0",
+          "id": "927496c8-5321-48a3-bd9c-56b7a7a1f1f0",
           "name": "06 Closing subtitle 0",
           "bbox": [
             92,
@@ -122,7 +122,7 @@
     },
     {
       "scope": "master",
-      "id": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+      "id": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
       "name": "Maslow Brand Master",
       "type": "master",
       "elements": []
@@ -133,7 +133,7 @@
       "order": 1,
       "kind": "image",
       "scope": "slide",
-      "aid": "im/zal0zmt0",
+      "aid": "im/7e18be9g",
       "id": "1",
       "bbox": [
         92,
@@ -149,7 +149,7 @@
         "geometry": "rect"
       },
       "asset": {
-        "assetId": "0094d97a-ef17-41d5-b9e2-ee1c982b9d77",
+        "assetId": "bcb49e82-e698-4f77-b746-39c1733d0543",
         "contentType": "image/png",
         "byteLength": 102885
       }
@@ -158,7 +158,7 @@
       "order": 2,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/1czmxkf6",
+      "aid": "sh/lone10rm",
       "id": "2",
       "name": "closing-heading",
       "bbox": [
@@ -217,7 +217,7 @@
       "order": 3,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/0bq5ofel",
+      "aid": "sh/0nedsfa1",
       "id": "3",
       "name": "closing-action",
       "bbox": [
@@ -234,7 +234,7 @@
       "order": 4,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ne1ozaxc",
+      "aid": "sh/bilcvq9k",
       "id": "4",
       "name": "closing-action-label",
       "bbox": [
@@ -293,7 +293,7 @@
       "order": 5,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/mdsnq5wr",
+      "aid": "sh/qhcvmlsz",
       "id": "5",
       "name": "closing-action-signal",
       "bbox": [
@@ -310,7 +310,7 @@
       "order": 6,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9gj61kfi",
+      "aid": "sh/dk3ex0rq",
       "id": "6",
       "name": "closing-contact",
       "bbox": [
@@ -366,7 +366,7 @@
       "order": 7,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ofa5sfex",
+      "aid": "sh/cjudova5",
       "id": "7",
       "name": "footer-wordmark-{{FOLIO}}",
       "bbox": [
@@ -425,7 +425,7 @@
       "order": 8,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/3ix4nqxs",
+      "aid": "sh/3e1crq98",
       "id": "8",
       "name": "footer-folio-{{FOLIO}}",
       "bbox": [

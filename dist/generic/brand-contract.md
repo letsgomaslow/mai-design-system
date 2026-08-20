@@ -1,4 +1,4 @@
-# Maslow Brand Contract 1.0.1
+# Maslow Brand Contract 1.1.0
 
 Apply this contract to every Maslow website, presentation, document, PDF, campaign, and social asset.
 
@@ -9,12 +9,13 @@ Apply this contract to every Maslow website, presentation, document, PDF, campai
    - Inverse: white `#FFFFFF` with navy `#192332` text.
    - Text links: purple `#9D4B8E`; hover `#654C8F`; focus `#401877`.
 2. Reserve pink for a small interaction signal or exceptional emphasis. Never use pink as a default element fill.
-3. Use square structural surfaces. Buttons, cards, panels, inputs, navigation controls, pills, and badges use zero radius.
-4. Preserve circles only for avatars, status dots, step markers, and small signals whose shape carries meaning.
-5. Use Manrope for general copy, DM Sans for selected display emphasis, and IBM Plex Mono for compact metadata.
-6. Use the seven immutable designer-supplied PNG masters cataloged in `src/logo-assets.json`. Never redraw, recolor, trace, crop, trim, retype, re-encode, or approximate a logo gradient from tokens.
-7. Use flat white, off-white, or navy surfaces, hairline rules, generous spacing, and restrained accents.
-8. Keep animation optional, brief, and disabled by reduced-motion preferences.
+3. Use square actions and structural surfaces. Buttons, action links, cards, panels, inputs, navigation controls, interactive filters, interactive chips, and interactive badges use zero radius.
+4. Use the capsule radius only for non-interactive taxonomy or content-classification labels. Render these labels as text-level elements, normally `span`, with no link, button, click, focus, or pointer semantics.
+5. Preserve circles only for avatars, status dots, step markers, and small signals whose shape carries meaning.
+6. Use Manrope for general copy, DM Sans for selected display emphasis, and IBM Plex Mono for compact metadata.
+7. Use the seven immutable designer-supplied PNG masters cataloged in `src/logo-assets.json`. Never redraw, recolor, trace, crop, trim, retype, re-encode, or approximate a logo gradient from tokens.
+8. Use flat white, off-white, or navy surfaces, hairline rules, generous spacing, and restrained accents.
+9. Keep animation optional, brief, and disabled by reduced-motion preferences.
 
 ## Mandatory messaging rules
 
@@ -29,4 +30,4 @@ Apply this contract to every Maslow website, presentation, document, PDF, campai
 
 ## Release rule
 
-Run the Brand OS validator in draft mode while iterating. Run release mode before delivery. Release mode must report zero blocking violations and no unresolved variables.
+Run the Brand OS validator in draft mode while iterating. Run release mode before delivery. Release mode must report zero blocking violations and no unresolved variables. A rounded interactive element or an interactive taxonomy capsule is always blocking.

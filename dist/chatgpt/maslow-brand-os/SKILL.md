@@ -3,7 +3,7 @@ name: maslow-brand-os
 description: Use when creating or reviewing any Maslow AI branded website, presentation, document, PDF, campaign, social asset, image, or interface.
 ---
 
-# Maslow Brand OS 1.0.1
+# Maslow Brand OS 1.1.0
 
 Apply this compact contract before every task. Do not search for a different brand authority.
 
@@ -13,9 +13,9 @@ Apply this compact contract before every task. Do not search for a different bra
 - Inverse action: #FFFFFF with #192332 text on dark surfaces.
 - Link: #9D4B8E; hover: #654C8F; focus: #401877.
 - Pink #EE7BB3 is a small signal only, never a default element fill or readable text.
-- Structural radius: 0px. Circles are limited to avatars, status dots, step markers, and meaningful small signals.
+- Structural radius: 0px. Non-interactive taxonomy labels use 9999px. Circles are limited to avatars, status dots, step markers, and meaningful small signals.
 
-# Maslow Brand Contract 1.0.1
+# Maslow Brand Contract 1.1.0
 
 Apply this contract to every Maslow website, presentation, document, PDF, campaign, and social asset.
 
@@ -26,12 +26,13 @@ Apply this contract to every Maslow website, presentation, document, PDF, campai
    - Inverse: white `#FFFFFF` with navy `#192332` text.
    - Text links: purple `#9D4B8E`; hover `#654C8F`; focus `#401877`.
 2. Reserve pink for a small interaction signal or exceptional emphasis. Never use pink as a default element fill.
-3. Use square structural surfaces. Buttons, cards, panels, inputs, navigation controls, pills, and badges use zero radius.
-4. Preserve circles only for avatars, status dots, step markers, and small signals whose shape carries meaning.
-5. Use Manrope for general copy, DM Sans for selected display emphasis, and IBM Plex Mono for compact metadata.
-6. Use the seven immutable designer-supplied PNG masters cataloged in `src/logo-assets.json`. Never redraw, recolor, trace, crop, trim, retype, re-encode, or approximate a logo gradient from tokens.
-7. Use flat white, off-white, or navy surfaces, hairline rules, generous spacing, and restrained accents.
-8. Keep animation optional, brief, and disabled by reduced-motion preferences.
+3. Use square actions and structural surfaces. Buttons, action links, cards, panels, inputs, navigation controls, interactive filters, interactive chips, and interactive badges use zero radius.
+4. Use the capsule radius only for non-interactive taxonomy or content-classification labels. Render these labels as text-level elements, normally `span`, with no link, button, click, focus, or pointer semantics.
+5. Preserve circles only for avatars, status dots, step markers, and small signals whose shape carries meaning.
+6. Use Manrope for general copy, DM Sans for selected display emphasis, and IBM Plex Mono for compact metadata.
+7. Use the seven immutable designer-supplied PNG masters cataloged in `src/logo-assets.json`. Never redraw, recolor, trace, crop, trim, retype, re-encode, or approximate a logo gradient from tokens.
+8. Use flat white, off-white, or navy surfaces, hairline rules, generous spacing, and restrained accents.
+9. Keep animation optional, brief, and disabled by reduced-motion preferences.
 
 ## Mandatory messaging rules
 
@@ -46,7 +47,7 @@ Apply this contract to every Maslow website, presentation, document, PDF, campai
 
 ## Release rule
 
-Run the Brand OS validator in draft mode while iterating. Run release mode before delivery. Release mode must report zero blocking violations and no unresolved variables.
+Run the Brand OS validator in draft mode while iterating. Run release mode before delivery. Release mode must report zero blocking violations and no unresolved variables. A rounded interactive element or an interactive taxonomy capsule is always blocking.
 
 
 ## Task instructions
@@ -69,11 +70,12 @@ Read `../../src/policies.json` for channel-neutral policy and `../../src/schemas
 **REQUIRED SUB-SKILL:** Use `maslow-brand-core` first.
 
 1. Import generated Brand OS tokens and preserve semantic action aliases.
-2. Use navy primary actions, white inverse actions, square structural surfaces, and sparse pink signals.
-3. Lead buyer routes with workflow, owner, human decision, evidence status, and an early working-session action.
-4. Keep technical maps secondary and optional.
-5. Use semantic HTML, visible labels, one `h1`, a skip link, visible focus, keyboard-complete navigation, and reduced-motion fallbacks.
-6. Test at 320, 768, 1024, and 1440 pixels, plus WCAG text spacing and reduced motion.
+2. Use navy primary actions, white inverse actions, square interactive and structural surfaces, and sparse pink signals.
+3. Use capsules only for non-interactive taxonomy or content-classification spans. Never make a capsule a link, button, filter, click target, or keyboard focus target.
+4. Lead buyer routes with workflow, owner, human decision, evidence status, and an early working-session action.
+5. Keep technical maps secondary and optional.
+6. Use semantic HTML, visible labels, one `h1`, a skip link, visible focus, keyboard-complete navigation, and reduced-motion fallbacks.
+7. Test at 320, 768, 1024, and 1440 pixels, plus WCAG text spacing and reduced motion.
 
 Use the existing website component patterns only after confirming they comply with the current contract.
 
@@ -118,7 +120,8 @@ Use the existing website component patterns only after confirming they comply wi
 2. Confirm every logo file matches a `src/logo-assets.json` hash and preserves the designer master canvas. Reject redrawn, recolored, traced, cropped, trimmed, retyped, converted, optimized, or re-encoded logos.
 3. Confirm the primary position, US English, direct copy, evidence labels, claim provenance, and resolved variables.
 4. Inspect the rendered output at its final size. Do not approve from source text alone.
-5. Run release mode. Approve only when the report has zero blocking violations.
+5. Confirm capsules are non-interactive taxonomy spans and every action, control, card, panel, and input remains square.
+6. Run release mode. Approve only when the report has zero blocking violations.
 
 Use `src/schemas/validation-report.schema.json` for the report contract.
 

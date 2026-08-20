@@ -15,6 +15,12 @@ Apply the canonical Maslow contract before making design or copy decisions.
 6. Run `node scripts/validate.mjs --mode draft --input <file>` while working.
 7. Run release validation before delivery. Fix every blocking violation.
 
+## Shape semantics
+
+- Keep actions, controls, cards, panels, and other structural surfaces square.
+- Use a capsule only for a non-interactive taxonomy or content-classification label.
+- A taxonomy capsule must be a plain text element with no link, button, click, focus, or pointer semantics.
+
 ## Quick reference
 
 | Need | Required skill |

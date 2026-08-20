@@ -51,8 +51,13 @@ const rules = [
     matches: hasPinkReadableText,
   },
   {
+    ruleId: "visual.interactive-capsule",
+    message: "Use capsules only for non-interactive taxonomy labels. Keep actions and controls square.",
+    matches: hasInteractiveCapsule,
+  },
+  {
     ruleId: "visual.structural-radius",
-    message: "Use zero radius for structural controls and surfaces.",
+    message: "Use zero radius for actions, controls, and structural surfaces. Capsules are limited to non-interactive taxonomy labels.",
     matches: hasRoundedStructure,
   },
   {
@@ -111,10 +116,40 @@ function hasRoundedStructure(source) {
     [...source.matchAll(/(--[\w-]+)\s*:\s*([^;{}]+)/g)].map((match) => [match[1].toLowerCase(), match[2].trim()]),
   );
   return styleRules(source).some(({ selector, declarations }) =>
-    [...declarations.matchAll(/border-radius\s*:\s*([^;}]+)/gi)].some((match) =>
-      !isZeroRadius(match[1], customProperties) && !exception.test(selector),
-    ),
+    [...declarations.matchAll(/border-radius\s*:\s*([^;}]+)/gi)].some((match) => {
+      if (isZeroRadius(match[1], customProperties) || exception.test(selector)) return false;
+      return !(isTaxonomySelector(selector) && isCapsuleRadius(match[1], customProperties));
+    }),
   );
+}
+
+function hasInteractiveCapsule(source) {
+  const interactiveElement = /^(?:a|button|input|select|textarea|summary|label)$/i;
+  const interactiveAttribute = /\s(?:href|on[a-z]+|tabindex|contenteditable)\s*=|\srole\s*=\s*["'](?:button|link|checkbox|menuitem|option|radio|switch|tab|treeitem)["']/i;
+  const elements = [...source.matchAll(/<([a-z][\w-]*)\b([^>]*\bdata-taxonomy-label\b[^>]*)>/gi)];
+  if (elements.some((match) => interactiveElement.test(match[1]) || interactiveAttribute.test(match[2]))) return true;
+
+  return styleRules(source).some(({ selector, declarations }) =>
+    isTaxonomySelector(selector)
+      && (/(?:^|[\s>+~,])(?:a|button|input|select|textarea|summary)(?:\b|[.#[:])/i.test(selector)
+        || /cursor\s*:\s*pointer/i.test(declarations)),
+  );
+}
+
+function isTaxonomySelector(selector) {
+  return /data-taxonomy-label/i.test(selector);
+}
+
+function isCapsuleRadius(value, customProperties, visited = new Set()) {
+  const normalized = value.trim().toLowerCase();
+  if (normalized === "9999px") return true;
+  const variable = normalized.match(/^var\((--[\w-]+)(?:,[^)]+)?\)$/);
+  if (!variable || visited.has(variable[1])) return false;
+  if (/--(?:maslow-)?radius-capsule$/.test(variable[1])) return true;
+  const resolved = customProperties.get(variable[1]);
+  if (!resolved) return false;
+  visited.add(variable[1]);
+  return isCapsuleRadius(resolved, customProperties, visited);
 }
 
 function isZeroRadius(value, customProperties, visited = new Set()) {

@@ -27,7 +27,7 @@ function sha(path) {
 if (!existsSync(join(dist, "npm"))) execFileSync(process.execPath, [join(root, "scripts/build.mjs")], { cwd: root, stdio: "inherit" });
 mkdirSync(release, { recursive: true });
 const checksums = {};
-for (const adapter of ["codex", "claude", "chatgpt", "generic", "npm"]) {
+for (const adapter of ["agent-plugin", "codex", "claude", "chatgpt", "hermes", "openclaw", "generic", "npm"]) {
   const source = join(dist, adapter);
   if (!statSync(source).isDirectory()) throw new Error(`Missing adapter distribution: ${source}`);
   normalizeTimes(source);

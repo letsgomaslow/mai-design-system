@@ -1,4 +1,4 @@
-# Maslow Brand OS 1.0.1
+# Maslow Brand OS 1.1.0
 
 Maslow Brand OS is the single source of truth for Maslow AI branding across websites, presentations, Word documents, PDFs, social campaigns, and agent-generated work. The canonical inputs live in `src/`. Everything else is a consumer, generated adapter, reusable component, preview, or artifact template.
 
@@ -19,7 +19,8 @@ Do not copy values into a skill or invent a separate rule. Change canonical sour
 - Navy `#192332` is the primary action on light surfaces. White is the inverse primary action on navy.
 - Pink `#EE7BB3` is a sparse interaction signal or exceptional emphasis. It is never a default element fill.
 - Purple supplies accessible links and focus treatment.
-- Buttons, cards, panels, inputs, navigation controls, pills, and badges use 0px structural radius.
+- Buttons, action links, cards, panels, inputs, navigation controls, interactive filters, interactive chips, and interactive badges use 0px structural radius.
+- Non-interactive taxonomy and content-classification labels use the capsule radius. They remain plain text spans with no click, link, focus, or pointer semantics.
 - Circles remain only when shape carries meaning, including avatars, status dots, step markers, and small signals.
 - Manrope, DM Sans, and IBM Plex Mono are vendored in `assets/fonts/`.
 - Seven designer-supplied logo masters live in `assets/logos/`. Their filenames are normalized for agents, but every PNG remains byte-identical to the designer handoff and is hash-locked in `src/logo-assets.json`.
@@ -54,8 +55,10 @@ Release mode must report zero blocking violations. Unresolved `{{VARIABLES}}` ar
 `npm run build` creates:
 
 - `dist/npm` for `@maslow-ai/brand-os` token, asset, and manifest exports.
+- `dist/agent-plugin` as the portable Agent Plugins v1 package.
 - `dist/codex` and `dist/claude` multi-skill plugin bundles.
+- `dist/hermes` and `dist/openclaw` harness-ready packages generated from the same contract.
 - `dist/chatgpt` as one self-contained skill folder.
 - `dist/generic` with the contract, schemas, templates, assets, and validation instructions.
 
-The root HTML specimen is now a Brand OS 1.0.1 landing page that points to the canonical contract, current template gallery, artifacts, and validator. The original standalone skill folders remain preserved outside this repository for compatibility, but their policy is superseded by `src/`.
+The repository root and `dist/agent-plugin` conform to Agent Plugins v1. The root `SKILL.md` supports harnesses that install one skill from a repository root. The original standalone skill folders remain preserved outside this repository for compatibility, but their policy is superseded by `src/`.

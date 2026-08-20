@@ -2,12 +2,12 @@
   "schema": "openai.presentation.layout/v4",
   "unit": "px",
   "slide": {
-    "aid": "sl/ayn4rk",
-    "id": "ayn4rk",
+    "aid": "sl/n6fe9w",
+    "id": "n6fe9w",
     "slide": 2,
-    "layoutId": "0356dfff-847f-438c-9b42-ed266a41e52c",
+    "layoutId": "3606c9a4-699c-442a-b33a-3a9dfbd7f573",
     "layoutName": "02 Section",
-    "masterLayoutId": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+    "masterLayoutId": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
     "masterLayoutName": "Maslow Brand Master",
     "backgroundColor": "#121D35",
     "frame": {
@@ -18,7 +18,7 @@
     }
   },
   "theme": {
-    "colorSchemeName": "Maslow Brand OS 1.0.1",
+    "colorSchemeName": "Maslow Brand OS 1.1.0",
     "colors": {
       "accent1": "#192332",
       "accent2": "#73C1AE",
@@ -41,15 +41,15 @@
   "inheritedLayers": [
     {
       "scope": "layout",
-      "id": "0356dfff-847f-438c-9b42-ed266a41e52c",
+      "id": "3606c9a4-699c-442a-b33a-3a9dfbd7f573",
       "name": "02 Section",
-      "parentLayoutId": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+      "parentLayoutId": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
       "elements": [
         {
           "order": 1,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/0356dfff-847f-438c-9b42-ed266a41e52c/1",
+          "aid": "template/layout/3606c9a4-699c-442a-b33a-3a9dfbd7f573/1",
           "id": "1",
           "name": "02 Section background",
           "bbox": [
@@ -66,8 +66,8 @@
           "order": 2,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/0356dfff-847f-438c-9b42-ed266a41e52c/d8eae22c-daeb-4945-8be8-dbc997b0e73d",
-          "id": "d8eae22c-daeb-4945-8be8-dbc997b0e73d",
+          "aid": "template/layout/3606c9a4-699c-442a-b33a-3a9dfbd7f573/c366415b-656c-449e-a506-531288305d33",
+          "id": "c366415b-656c-449e-a506-531288305d33",
           "name": "02 Section title 0",
           "bbox": [
             92,
@@ -94,8 +94,8 @@
           "order": 3,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/0356dfff-847f-438c-9b42-ed266a41e52c/aa40ad58-7b7e-4c09-adc3-b642293ca7bf",
-          "id": "aa40ad58-7b7e-4c09-adc3-b642293ca7bf",
+          "aid": "template/layout/3606c9a4-699c-442a-b33a-3a9dfbd7f573/6b151975-b74c-4ff3-a7e0-bbf91d9883c6",
+          "id": "6b151975-b74c-4ff3-a7e0-bbf91d9883c6",
           "name": "02 Section subtitle 0",
           "bbox": [
             92,
@@ -122,7 +122,7 @@
     },
     {
       "scope": "master",
-      "id": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+      "id": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
       "name": "Maslow Brand Master",
       "type": "master",
       "elements": []
@@ -133,7 +133,7 @@
       "order": 1,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/jm10jupc",
+      "aid": "sh/5w761g36",
       "id": "1",
       "name": "section-step-marker",
       "bbox": [
@@ -195,7 +195,7 @@
       "order": 2,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/kna1sz6x",
+      "aid": "sh/i9gn614v",
       "id": "2",
       "name": "section-eyebrow",
       "bbox": [
@@ -254,7 +254,7 @@
       "order": 3,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/lojil47i",
+      "aid": "sh/japoz6lg",
       "id": "3",
       "name": "section-heading",
       "bbox": [
@@ -313,7 +313,7 @@
       "order": 4,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ax8jm5ov",
+      "aid": "sh/szipcvmx",
       "id": "4",
       "name": "section-signal",
       "bbox": [

@@ -2,12 +2,12 @@
   "schema": "openai.presentation.layout/v4",
   "unit": "px",
   "slide": {
-    "aid": "sl/io074a",
-    "id": "io074a",
+    "aid": "sl/1t7z33",
+    "id": "1t7z33",
     "slide": 5,
-    "layoutId": "7441d3a6-ccc5-40d8-8f36-702caa28d9c7",
+    "layoutId": "2bab4080-1514-4d74-8690-aab41b5f079c",
     "layoutName": "05 Quote",
-    "masterLayoutId": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+    "masterLayoutId": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
     "masterLayoutName": "Maslow Brand Master",
     "backgroundColor": "#F6F7F9",
     "frame": {
@@ -18,7 +18,7 @@
     }
   },
   "theme": {
-    "colorSchemeName": "Maslow Brand OS 1.0.1",
+    "colorSchemeName": "Maslow Brand OS 1.1.0",
     "colors": {
       "accent1": "#192332",
       "accent2": "#73C1AE",
@@ -41,15 +41,15 @@
   "inheritedLayers": [
     {
       "scope": "layout",
-      "id": "7441d3a6-ccc5-40d8-8f36-702caa28d9c7",
+      "id": "2bab4080-1514-4d74-8690-aab41b5f079c",
       "name": "05 Quote",
-      "parentLayoutId": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+      "parentLayoutId": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
       "elements": [
         {
           "order": 1,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/7441d3a6-ccc5-40d8-8f36-702caa28d9c7/1",
+          "aid": "template/layout/2bab4080-1514-4d74-8690-aab41b5f079c/1",
           "id": "1",
           "name": "05 Quote background",
           "bbox": [
@@ -66,8 +66,8 @@
           "order": 2,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/7441d3a6-ccc5-40d8-8f36-702caa28d9c7/5b0338e7-3b15-4c11-abcc-cc84b783cfd7",
-          "id": "5b0338e7-3b15-4c11-abcc-cc84b783cfd7",
+          "aid": "template/layout/2bab4080-1514-4d74-8690-aab41b5f079c/2dbfe784-a2c3-48b1-9147-d4f9cbd3f4b4",
+          "id": "2dbfe784-a2c3-48b1-9147-d4f9cbd3f4b4",
           "name": "05 Quote title 0",
           "bbox": [
             130,
@@ -94,8 +94,8 @@
           "order": 3,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/7441d3a6-ccc5-40d8-8f36-702caa28d9c7/a047fc89-ef82-41ed-b356-d48e57ace780",
-          "id": "a047fc89-ef82-41ed-b356-d48e57ace780",
+          "aid": "template/layout/2bab4080-1514-4d74-8690-aab41b5f079c/cdf24471-a178-4a85-a8a4-dfa2cf56cf58",
+          "id": "cdf24471-a178-4a85-a8a4-dfa2cf56cf58",
           "name": "05 Quote subtitle 0",
           "bbox": [
             130,
@@ -122,7 +122,7 @@
     },
     {
       "scope": "master",
-      "id": "924ec9d5-373f-4ef9-9d3a-a8f3e7c7492c",
+      "id": "318a9649-4368-4d74-995d-ba5c2c8fa69b",
       "name": "Maslow Brand Master",
       "type": "master",
       "elements": []
@@ -133,7 +133,7 @@
       "order": 1,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/03qdcfel",
+      "aid": "sh/w7ip8fq5",
       "id": "1",
       "name": "quote-mark",
       "bbox": [
@@ -192,7 +192,7 @@
       "order": 2,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/z2hc3ax0",
+      "aid": "sh/v6p8zapk",
       "id": "2",
       "name": "quote-text",
       "bbox": [
@@ -251,7 +251,7 @@
       "order": 3,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/e1ova5wf",
+      "aid": "sh/a5g7658z",
       "id": "3",
       "name": "quote-attribution",
       "bbox": [
@@ -307,7 +307,7 @@
       "order": 4,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/d0fu10fu",
+      "aid": "sh/947qx07e",
       "id": "4",
       "name": "quote-source",
       "bbox": [
