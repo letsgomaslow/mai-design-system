@@ -7,9 +7,9 @@ description: Use when creating, editing, reviewing, or exporting any Maslow AI b
 
 Use this repository as the only Maslow brand authority.
 
-1. Read `src/brand-contract.md` completely before making brand decisions.
-2. Read `src/tokens.json`, `src/policies.json`, and `src/logo-assets.json` for exact values and approved assets.
-3. Load only the focused skill that matches the task:
+1. Read `src/brand-contract.md` completely before making brand decisions. In Hermes, use `${HERMES_SKILL_DIR}/src/brand-contract.md`.
+2. Read `src/tokens.json`, `src/policies.json`, and `src/logo-assets.json` for exact values and approved assets. In Hermes, use `${HERMES_SKILL_DIR}/src/...`.
+3. Load only the focused skill that matches the task. In Hermes, load it by qualified name, such as `maslow-brand-os:maslow-web-interface`:
    - Messaging or campaigns: `skills/maslow-messaging-campaigns/SKILL.md`
    - Websites or interfaces: `skills/maslow-web-interface/SKILL.md`
    - Presentations: `skills/maslow-presentations/SKILL.md`

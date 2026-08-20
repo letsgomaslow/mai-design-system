@@ -4,15 +4,14 @@ Use a pinned release or Git tag so every agent uses the same contract version. B
 
 ## Hermes
 
-Install the tagged repository as a portable Agent Plugin, then enable it:
+Install the tagged repository as a native Hermes plugin, then enable it:
 
 ```sh
-hermes plugins install letsgomaslow/mai-design-system --no-enable
-hermes plugins enable maslow-brand-os
-hermes plugins doctor maslow-brand-os --ci
+hermes plugins install letsgomaslow/mai-design-system --enable
+hermes plugins list --plain --no-bundled
 ```
 
-Use `skills_list` to discover the qualified skill name and `skill_view` to load only the relevant focused skill.
+Use `maslow-brand-os:maslow-brand-os` for the root routing skill, or load a focused namespaced skill such as `maslow-brand-os:maslow-web-interface` with `skill_view` / `/skill`.
 
 ## OpenClaw
 

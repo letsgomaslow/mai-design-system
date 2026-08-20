@@ -1,0 +1,13 @@
+name: maslow-brand-os
+version: 1.1.0
+description: Maslow AI Brand OS skill bundle for Hermes. Provides the canonical brand contract, focused artifact skills, templates, assets, and validation guidance.
+kind: standalone
+provides_skills:
+  - maslow-brand-os
+  - maslow-brand-core
+  - maslow-messaging-campaigns
+  - maslow-web-interface
+  - maslow-presentations
+  - maslow-documents-pdf
+  - maslow-social-imagery
+  - maslow-brand-review
