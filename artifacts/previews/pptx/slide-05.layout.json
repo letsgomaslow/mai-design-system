@@ -3,7 +3,7 @@
   "unit": "px",
   "slide": {
     "aid": "sl/00000046",
-    "id": "id-00000005",
+    "id": "id-00000034",
     "slide": 5,
     "layoutId": "E514A839-022F-51EB-9C8C-674AD6F71B3A",
     "layoutName": "05 Quote",
@@ -49,8 +49,8 @@
           "order": 1,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/E514A839-022F-51EB-9C8C-674AD6F71B3A/1",
-          "id": "1",
+          "aid": "id-00000035",
+          "id": "id-00000003",
           "name": "05 Quote background",
           "bbox": [
             0,
@@ -66,7 +66,7 @@
           "order": 2,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/E514A839-022F-51EB-9C8C-674AD6F71B3A/C9402774-FE28-5514-A868-4DBFD6CDAD6A",
+          "aid": "id-00000036",
           "id": "C9402774-FE28-5514-A868-4DBFD6CDAD6A",
           "name": "05 Quote title 0",
           "bbox": [
@@ -94,7 +94,7 @@
           "order": 3,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/E514A839-022F-51EB-9C8C-674AD6F71B3A/EBA14900-FA13-5EA5-80BF-1B7E053D7BA3",
+          "aid": "id-00000037",
           "id": "EBA14900-FA13-5EA5-80BF-1B7E053D7BA3",
           "name": "05 Quote subtitle 0",
           "bbox": [
@@ -134,7 +134,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000047",
-      "id": "1",
+      "id": "id-00000003",
       "name": "quote-mark",
       "bbox": [
         130,
@@ -193,7 +193,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000048",
-      "id": "2",
+      "id": "id-00000006",
       "name": "quote-text",
       "bbox": [
         130,
@@ -252,7 +252,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000049",
-      "id": "3",
+      "id": "id-00000007",
       "name": "quote-attribution",
       "bbox": [
         130,
@@ -308,7 +308,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000050",
-      "id": "4",
+      "id": "id-00000008",
       "name": "quote-source",
       "bbox": [
         130,

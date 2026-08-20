@@ -3,7 +3,7 @@
   "unit": "px",
   "slide": {
     "aid": "sl/00000051",
-    "id": "id-00000006",
+    "id": "id-00000038",
     "slide": 6,
     "layoutId": "0E95D852-260F-5762-9ABB-F76EBBFAB473",
     "layoutName": "06 Closing",
@@ -49,8 +49,8 @@
           "order": 1,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/0E95D852-260F-5762-9ABB-F76EBBFAB473/1",
-          "id": "1",
+          "aid": "id-00000039",
+          "id": "id-00000003",
           "name": "06 Closing background",
           "bbox": [
             0,
@@ -66,7 +66,7 @@
           "order": 2,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/0E95D852-260F-5762-9ABB-F76EBBFAB473/A9300ABA-5D23-5C2B-92C7-75E15CD6A88F",
+          "aid": "id-00000040",
           "id": "A9300ABA-5D23-5C2B-92C7-75E15CD6A88F",
           "name": "06 Closing title 0",
           "bbox": [
@@ -94,7 +94,7 @@
           "order": 3,
           "kind": "shape",
           "scope": "layout",
-          "aid": "template/layout/0E95D852-260F-5762-9ABB-F76EBBFAB473/04247442-90C7-52FB-89DA-3E47FFDADC3C",
+          "aid": "id-00000041",
           "id": "04247442-90C7-52FB-89DA-3E47FFDADC3C",
           "name": "06 Closing subtitle 0",
           "bbox": [
@@ -134,7 +134,7 @@
       "kind": "image",
       "scope": "slide",
       "aid": "im/00000052",
-      "id": "1",
+      "id": "id-00000003",
       "bbox": [
         92,
         62,
@@ -159,7 +159,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000053",
-      "id": "2",
+      "id": "id-00000006",
       "name": "closing-heading",
       "bbox": [
         92,
@@ -218,7 +218,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000054",
-      "id": "3",
+      "id": "id-00000007",
       "name": "closing-action",
       "bbox": [
         92,
@@ -235,7 +235,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000055",
-      "id": "4",
+      "id": "id-00000008",
       "name": "closing-action-label",
       "bbox": [
         120,
@@ -294,7 +294,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000056",
-      "id": "5",
+      "id": "id-00000017",
       "name": "closing-action-signal",
       "bbox": [
         92,
@@ -311,7 +311,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000057",
-      "id": "6",
+      "id": "id-00000018",
       "name": "closing-contact",
       "bbox": [
         92,
@@ -367,7 +367,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000058",
-      "id": "7",
+      "id": "id-00000019",
       "name": "footer-wordmark-{{FOLIO}}",
       "bbox": [
         92,
@@ -426,7 +426,7 @@
       "kind": "shape",
       "scope": "slide",
       "aid": "sh/00000059",
-      "id": "8",
+      "id": "id-00000020",
       "name": "footer-folio-{{FOLIO}}",
       "bbox": [
         1008,

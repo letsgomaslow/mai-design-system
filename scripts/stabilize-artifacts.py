@@ -134,7 +134,9 @@ class JsonIdCanonicalizer:
         original = value
         value = UUID_RE.sub(self.replace_uuid, value)
         value = AID_RE.sub(self.replace_aid, value)
-        if key in ID_KEYS and original.isalnum() and not original.isdigit():
+        is_uuid = UUID_RE.fullmatch(original) is not None
+        is_aid = AID_RE.fullmatch(original) is not None
+        if key in ID_KEYS and original and not is_uuid and not is_aid:
             value = self.id_values.setdefault(original, f"id-{len(self.id_values) + 1:08d}")
         return value
 
