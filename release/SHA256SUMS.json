@@ -1,13 +1,13 @@
 {
   "version": "1.1.0",
   "files": {
-    "maslow-brand-os-agent-plugin-v1.1.0.zip": "dfa04c90405d209b878667594c21fcd382fc104abad761046c2ac2a6c2bd4990",
-    "maslow-brand-os-codex-v1.1.0.zip": "369f8e369d9ad6c1382e77be1891b8f59b25c57b550879c34ddcee299df43ed9",
-    "maslow-brand-os-claude-v1.1.0.zip": "80ecab5533ea1bbf3f9c9a58d8dffa0fc6b34a513f179a77521eafdf44fac9b9",
-    "maslow-brand-os-chatgpt-v1.1.0.zip": "91d86bfb5972d9d6174fbe05a99c4874c6a9417cddec5a42558814a2abc4398a",
-    "maslow-brand-os-hermes-v1.1.0.zip": "f51cdac2e89c8973054f4cd21155e7575a0a2ac8d0185b03d6a85940e1c58a87",
-    "maslow-brand-os-openclaw-v1.1.0.zip": "3b4210ed99d589d6fc22eff7c364be50c805c5c851ade97c85de941774363cf6",
-    "maslow-brand-os-generic-v1.1.0.zip": "52c48ec95ff08aa4db5e1f45f92237d28798c910428ac15d2829cf58b5d510a2",
+    "maslow-brand-os-agent-plugin-v1.1.0.zip": "323395a90e5dee4f7b43817517dfac40b1f4669174fc711d9848a4410c1f97fd",
+    "maslow-brand-os-codex-v1.1.0.zip": "9bea4001f95976bf8a98b3dc3c147be890a05682a335c919e7b5d392d82d5a2c",
+    "maslow-brand-os-claude-v1.1.0.zip": "27bd93f8b2789ccddfc64cc111e2e67613445eb6be5a8550d65bbf11b6e1be27",
+    "maslow-brand-os-chatgpt-v1.1.0.zip": "61c82051c66c0f9ac3688f267724c52334f666414c5d1f3c07f585a965debc6f",
+    "maslow-brand-os-hermes-v1.1.0.zip": "77363bbef3c07fd9e283a81d9d12ad5ae1d47eb14dd3abf315290f622e0ed313",
+    "maslow-brand-os-openclaw-v1.1.0.zip": "17647f6b635f9a8f54886ddd7f3fc61c2c92cced780211f5cec616386578911c",
+    "maslow-brand-os-generic-v1.1.0.zip": "754d40715978a1d751787d161329ac762eb984408fb76cd4063a5f39fdbec222",
     "maslow-brand-os-npm-v1.1.0.zip": "63d06267455dda1cc3910c1d2192529652fc8ef3cd97ee2a36df6628ee422913"
   }
 }
